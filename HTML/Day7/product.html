@@ -1,0 +1,191 @@
+<html>
+  <head>
+    <title>Product List</title>
+  </head>
+
+  <body>
+    <section>
+      <div>
+        <h1>Products List Add Form</h1>
+
+        <form>
+          <fieldset>
+            <legend><h2>Product Detail</h2></legend>
+
+            <label>Product Name</label>
+            <br />
+            <input type="text" name="productName" required maxlength="20" />
+            <br /><br />
+
+            <label>Product Category</label>
+            <br />
+            <select required>
+              <option value="" selected disabled>Select one</option>
+              <option value="electronics">Electronics</option>
+              <option value="food">Food</option>
+              <option value="clothing">Clothing</option>
+              <option value="furniture">Furniture</option></select
+            ><br /><br />
+
+            <label>Product Price</label>
+            <br />
+            <input type="number" name="productPrice" required />
+            <br /><br />
+
+            <label>Product Quantity</label>
+            <br />
+            <input
+              type="number"
+              name="productQuantity"
+              maxlength="10"
+              required
+            />
+            <br /><br />
+
+            <label>Product Image</label>
+            <br />
+            <input type="file" name="productImage" />
+            <br /><br />
+
+            <label>Product City</label>
+            <br />
+            <input type="text" name="productCity" required />
+            <br /><br />
+
+            <label>Product Ship ID</label>
+            <br />
+            <input type="text" name="productShipId" required />
+            <br /><br />
+
+            <label>Product Weight</label>
+            <br />
+            <input type="number" name="productWeight" />
+            <br /><br />
+
+            <label>Product Have a Licence</label>
+            <br />
+            <input type="radio" name="licence" required /> Yes
+            <input type="radio" name="licence" required /> No <br /><br />
+
+            <label>Approved List</label><br />
+
+            <input type="checkbox" name="licence" required /> FSSI
+            <input type="checkbox" name="licence" required /> GST
+            <input type="checkbox" name="licence" required /> FOOD Licence
+            <br /><br />
+
+            <input type="submit" />
+            <input type="reset" />
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <hr />
+    <section>
+      <div>
+        <h2>Product Table</h2>
+
+        <table border="2">
+          <thead>
+            <th>Product Name</th>
+            <th>Product Category</th>
+            <th>Product Price</th>
+            <th>Product Quantity</th>
+            <th>Product City</th>
+            <th>Product Weight</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mobile</td>
+              <td>Electronics</td>
+              <td>15000</td>
+              <td>5</td>
+              <td>Chennai</td>
+              <td>200g</td>
+            </tr>
+            <tr>
+              <td>Shoes</td>
+              <td>Clothing</td>
+              <td>2500</td>
+              <td>10</td>
+              <td>Madurai</td>
+              <td>500g</td>
+            </tr>
+            <tr>
+              <td>Laptop</td>
+              <td>Electronics</td>
+              <td>55000</td>
+              <td>3</td>
+              <td>Bangalore</td>
+              <td>2kg</td>
+            </tr>
+
+            <tr>
+              <td>Rice Bag</td>
+              <td>Food</td>
+              <td>1200</td>
+              <td>20</td>
+              <td>Salem</td>
+              <td>25kg</td>
+            </tr>
+
+            <tr>
+              <td>T-Shirt</td>
+              <td>Clothing</td>
+              <td>800</td>
+              <td>15</td>
+              <td>Coimbatore</td>
+              <td>300g</td>
+            </tr>
+
+            <tr>
+              <td>Office Chair</td>
+              <td>Furniture</td>
+              <td>4500</td>
+              <td>6</td>
+              <td>Hyderabad</td>
+              <td>7kg</td>
+            </tr>
+
+            <tr>
+              <td>Headphones</td>
+              <td>Electronics</td>
+              <td>2000</td>
+              <td>12</td>
+              <td>Mumbai</td>
+              <td>250g</td>
+            </tr>
+
+            <tr>
+              <td>Chocolate Box</td>
+              <td>Food</td>
+              <td>350</td>
+              <td>30</td>
+              <td>Delhi</td>
+              <td>1kg</td>
+            </tr>
+
+            <tr>
+              <td>Dining Table</td>
+              <td>Furniture</td>
+              <td>12000</td>
+              <td>2</td>
+              <td>Pune</td>
+              <td>15kg</td>
+            </tr>
+
+            <tr>
+              <td>Sports Shoes</td>
+              <td>Clothing</td>
+              <td>3200</td>
+              <td>8</td>
+              <td>Chennai</td>
+              <td>700g</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>
