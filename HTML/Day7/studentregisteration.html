@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>Student Registration Form</title>
+  </head>
+
+  <body>
+    <section>
+      <div>
+        <h1>Student Registration Form</h1>
+
+        <form>
+          <label>Student Name</label><br />
+          <input
+            type="text"
+            name="studentName"
+            placeholder="Enter your name"
+            required
+          />
+          <br /><br />
+
+          <label>Email Address</label><br />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <br /><br />
+
+          <label>Password</label><br />
+          <input type="password" name="password" placeholder="Enter password" />
+          <br /><br />
+
+          <label>Phone Number</label><br />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Enter phone number"
+            maxlength="10"
+            required
+          />
+          <br /><br />
+
+          <label>Age</label><br />
+          <input type="number" name="age" required />
+          <br /><br />
+
+          <label>Date of Birth</label><br />
+          <input type="date" name="dob" />
+          <br /><br />
+
+          <label>Gender</label><br />
+          <input type="radio" name="gender" /> Male
+          <input type="radio" name="gender" /> Female <br /><br />
+
+          <label>Skills</label><br />
+          <input type="checkbox" name="skill" /> HTML
+          <input type="checkbox" name="skill" /> CSS
+          <input type="checkbox" name="skill" /> JavaScript <br /><br />
+
+          <label>Department</label><br />
+          <select name="department">
+            <option value="" selected disabled>Select one</option>
+            <option value="cse">CSE</option>
+            <option value="it">IT</option>
+            <option value="ece">ECE</option>
+            <option value="eee">EEE</option>
+            <option value="mech">Mechanical</option>
+          </select>
+          <br /><br />
+
+          <label>Upload Resume</label><br />
+          <input type="file" name="resume" required />
+          <br /><br />
+
+          <label>Address</label><br />
+          <textarea name="address" rows="5" cols="30"></textarea>
+          <br /><br />
+
+          <input type="submit" />
+          <input type="reset" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

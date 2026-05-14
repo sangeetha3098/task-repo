@@ -1,0 +1,149 @@
+<html>
+  <head>
+    <title>Resume Builder Form</title>
+  </head>
+
+  <body>
+    <center>
+      <h1>Resume Builder Form</h1>
+      <p>Fill all the details to create your resume</p>
+    </center>
+    <section>
+      <div>
+        <form>
+          <!-- Personal Details -->
+          <fieldset>
+            <legend><h2>Personal Details</h2></legend>
+
+            <label>Full Name</label><br />
+            <input
+              type="text"
+              name="fullname"
+              placeholder="Enter your full name"
+              required
+            />
+            <br /><br />
+
+            <label>Email Address</label><br />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <br /><br />
+
+            <label>Phone Number</label><br />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Enter phone number"
+              maxlength="10"
+              required
+            />
+            <br /><br />
+
+            <label>Date of Birth</label><br />
+            <input type="date" name="dob" />
+            <br /><br />
+
+            <label>Gender</label><br />
+            <input type="radio" name="gender" /> Male
+            <input type="radio" name="gender" /> Female
+            <br /><br />
+
+            <label>Address</label><br />
+            <textarea
+              rows="5"
+              cols="40"
+              placeholder="Enter your address"
+            ></textarea>
+          </fieldset>
+
+          <br />
+
+          <!-- Education Details -->
+          <fieldset>
+            <legend><h2>Education Details</h2></legend>
+
+            <label>Highest Qualification</label><br />
+            <select>
+              <option value="" selected disabled required>Select Qualification</option>
+              <option value="tenth">10th</option>
+              <option value="twelfth">12th</option>
+              <option value="diploma">Diploma</option>
+              <option value="ug">UG Degree</option>
+              <option value="pg">PG Degree</option>
+            </select>
+            <br /><br />
+
+            <label>College Name</label><br />
+            <input type="text" placeholder="Enter college name"required />
+            <br /><br />
+
+            <label>Year of Passing</label><br />
+            <input type="month" required/>
+            <br /><br />
+
+            <label>Percentage / CGPA</label><br />
+            <input type="number" placeholder="Enter percentage" required  />
+          </fieldset>
+
+          <br />
+
+          <!-- Skills -->
+          <fieldset>
+            <legend><h2>Skills</h2></legend>
+
+            <input type="checkbox" name="Skills" /> HTML 
+            <input type="checkbox" name="Skills"  /> CSS
+            <input type="checkbox" name="Skills" /> JavaScript 
+            <input type="checkbox" name="Skills" /> React
+            <input type="checkbox" name="Skills" /> Node.js 
+          </fieldset>
+
+          <br />
+
+          <!-- Experience -->
+          <fieldset>
+            <legend><h2>Experience</h2></legend>
+
+            <label>Years of Experience</label><br />
+            <input type="number" min="0" max="20" required />
+            <br /><br />
+
+            <label>Previous Company Name</label><br />
+            <input type="text" placeholder="Enter company name" required />
+            <br /><br />
+
+            <label>Job Role</label><br />
+            <input type="text" placeholder="Enter your role" required />
+            <br /><br />
+
+            <label>Work Description</label><br />
+            <textarea
+              rows="5"
+              cols="40"
+              placeholder="Describe your experience"
+            ></textarea>
+          </fieldset>
+
+          <br />
+
+          <!-- File Upload -->
+          <fieldset>
+            <legend><h2>Upload Resume</h2></legend>
+
+            <label>Choose Resume File</label><br />
+            <input type="file" required />
+          </fieldset>
+
+          <br />
+
+          <input type="submit" value="Create Resume" />
+          <input type="reset" value="Clear Form" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

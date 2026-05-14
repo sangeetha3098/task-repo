@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <title>College Admission Form</title>
+  </head>
+
+  <body>
+    <center>
+      <h1>College Admission Form</h1>
+      <p>Please fill all the details carefully</p>
+    </center>
+
+    <form>
+      <fieldset>
+        <legend><h2>Student Personal Details</h2></legend>
+
+        <label>Student Name</label><br />
+        <input
+          type="text"
+          name="studentName"
+          placeholder="Enter your name"
+          required
+        />
+        <br /><br />
+
+        <label>Email Address</label><br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <br /><br />
+
+        <label>Phone Number</label><br />
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Enter phone number"
+          maxlength="10"
+          required
+        />
+        <br /><br />
+
+        <label>Date of Birth</label><br />
+        <input type="date" name="dob" required />
+        <br /><br />
+
+        <label>Gender</label><br />
+        <input type="radio" name="gender" /> Male
+        <input type="radio" name="gender" /> Female <br /><br />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend><h2>Course Selection</h2></legend>
+
+        <label>Select Department</label><br />
+
+        <select name="department">
+          <optgroup label="Engineering Courses">
+            <option value="" selected disabled>Select one</option>
+            <option value="cse">CSE</option>
+            <option value="it">IT</option>
+            <option value="ece">ECE</option>
+            <option value="eee">EEE</option>
+            <option value="mech">Mechanical</option>
+          </optgroup>
+
+          <optgroup label="Arts and Science Courses">
+            <option value="bca">BCA</option>
+            <option value="bsc">B.Sc Computer Science</option>
+            <option value="bcom">B.Com</option>
+            <option value="english">English Literature</option>
+          </optgroup>
+
+          <optgroup label="Management Courses">
+            <option value="bba">BBA</option>
+            <option value="mba">MBA</option>
+          </optgroup>
+        </select>
+
+        <br /><br />
+
+        <label>Select Hostel Requirement</label><br />
+
+        <input type="radio" name="Hostel" required />Yes 
+        <input type="radio"name="Hostel"  required />No
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend><h2>Address Details</h2></legend>
+
+        <label>Address</label><br />
+
+        <textarea
+          rows="5"
+          cols="40"
+          placeholder="Enter your address"
+        ></textarea>
+      </fieldset>
+
+      <br />
+
+      <input type="submit" value="Apply Now" />
+      <input type="reset" value="Clear Form" />
+    </form>
+  </body>
+</html>
