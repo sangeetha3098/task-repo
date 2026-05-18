@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Beaches Around the World Webpage" />
+    <meta name="keywords" content="Beaches, Travel, Nature, HTML" />
+    <meta name="author" content="Sangeetha" />
+
+    <title>Beaches Around the World</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/images/beaches/favicon.png" />
+
+    <!-- Smooth Scroll -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>🌊 Beaches Around the World 🌴</h1>
+      <p>
+        Explore beautiful beaches, discover relaxing destinations, and enjoy the
+        beauty of nature.
+      </p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      <a href="#about">About</a> | <a href="#lists">Activities</a> |
+      <a href="#table">Beach Table</a> | <a href="#media">Media</a> |
+      <a href="#location">Location</a> | <a href="#tips">Travel Tips</a> |
+      <a href="#form">Travel Form</a>
+    </nav>
+
+    <main>
+      <!-- About Section -->
+      <section id="about">
+        <h2>About Beaches</h2>
+
+        <img
+          src="../assets/images/beaches/beach2.png"
+          alt="Beautiful Beach"
+          width="600"
+        />
+
+        <!-- Block Level -->
+        <div>
+          <p>
+            Beaches are wonderful places where people relax and enjoy nature.
+            The sound of waves and cool breeze create a peaceful experience.
+          </p>
+        </div>
+
+        <!-- Extra Content -->
+        <p>
+          Beaches are found all around the world and each one has its own
+          beauty. Some beaches are famous for surfing, some for clear blue
+          water, and others for peaceful sunsets.
+        </p>
+
+        <!-- Inline + Formatting -->
+        <p>
+          Beaches are
+          <b>beautiful</b>, <i>calming</i>, <u>refreshing</u>, and
+          <mark>perfect for holidays</mark>.
+        </p>
+
+        <p>
+          Many travelers visit beaches to enjoy water sports, spend time with
+          family, and connect with nature. Clean beaches help protect marine
+          life and create a healthy environment.
+        </p>
+      </section>
+
+      <!-- Activities -->
+      <section id="lists">
+        <h2>Beach Activities</h2>
+
+        <h3>Top Activities</h3>
+        <ol>
+          <li>Swimming</li>
+          <li>Surfing</li>
+          <li>Beach Walking</li>
+          <li>Photography</li>
+          <li>Boating</li>
+        </ol>
+
+        <h3>Things to Carry</h3>
+        <ul>
+          <li>Sunscreen</li>
+          <li>Hat</li>
+          <li>Water Bottle</li>
+          <li>Sunglasses</li>
+          <li>Towel</li>
+        </ul>
+      </section>
+
+      <!-- Table -->
+      <section id="table">
+        <h2>Popular Beaches Around the World</h2>
+
+        <table border="1" cellpadding="10">
+          <thead>
+            <tr>
+              <th>Beach</th>
+              <th>Country</th>
+              <th>Famous For</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Bondi Beach</td>
+              <td>Australia</td>
+              <td>Surfing</td>
+            </tr>
+
+            <tr>
+              <td>Maldives Beach</td>
+              <td>Maldives</td>
+              <td>Blue Water</td>
+            </tr>
+
+            <tr>
+              <td>Waikiki Beach</td>
+              <td>USA</td>
+              <td>Tourism</td>
+            </tr>
+
+            <tr>
+              <td>Copacabana</td>
+              <td>Brazil</td>
+              <td>Nightlife</td>
+            </tr>
+
+            <tr>
+              <td>Bora Bora</td>
+              <td>French Polynesia</td>
+              <td>Luxury Resorts</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Media -->
+      <section id="media">
+        <h2>Beach Media</h2>
+
+        <img
+          src="../assets/images/beaches/beach.jpg"
+          alt="Beach Image"
+          width="400"
+        />
+
+        <br /><br />
+
+        <audio controls loop>
+          <source src="../assets/audio/beachsound.mp3" type="audio/mp3" />
+        </audio>
+
+        <br /><br />
+
+        <video width="500" controls>
+          <source src="../assets/video/beach.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <!-- Location -->
+      <section id="location">
+        <h2>Beach Location</h2>
+
+        <iframe
+          class="gmap_iframe"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          width="400"
+          height="400"
+          src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Beach&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        ></iframe>
+      </section>
+
+      <!-- Tips -->
+      <section id="tips">
+        <h2>Travel Tips</h2>
+
+        <details>
+          <summary>Click to View Travel Tips</summary>
+
+          <p>Keep beaches clean and follow safety rules while travelling.</p>
+
+          <ul>
+            <li>Wear sunscreen</li>
+            <li>Drink enough water</li>
+            <li>Do not litter</li>
+            <li>Follow swimming safety signs</li>
+          </ul>
+        </details>
+      </section>
+
+      <!-- Form -->
+      <section id="form">
+        <h2>Beach Travel Registration Form</h2>
+
+        <form>
+          <label>Name:</label><br />
+          <input type="text" placeholder="Enter your name" required />
+          <br /><br />
+
+          <label>Email:</label><br />
+          <input type="email" placeholder="Enter email" required />
+          <br /><br />
+
+          <label>Travel Date:</label><br />
+          <input type="date" />
+          <br /><br />
+
+          <!-- Radio -->
+          <label>Which beach weather do you like?</label><br />
+
+          <input type="radio" name="weather" />
+          <label>Sunny</label><br />
+
+          <input type="radio" name="weather" />
+          <label>Cool Breeze</label><br />
+
+          <input type="radio" name="weather" />
+          <label>Rainy</label>
+
+          <br /><br />
+
+          <!-- Checkbox -->
+          <label>Beach Activities You Enjoy:</label><br />
+
+          <input type="checkbox" />
+          <label>Swimming</label><br />
+
+          <input type="checkbox" />
+          <label>Surfing</label><br />
+
+          <input type="checkbox" />
+          <label>Photography</label><br />
+
+          <input type="checkbox" />
+          <label>Sunbathing</label>
+
+          <br /><br />
+
+          <!-- Select -->
+          <label>Select Beach Region:</label><br />
+
+          <select>
+            <optgroup label="Asia">
+              <option disabled selected>Select one</option>
+              <option>Maldives</option>
+              <option>Bali</option>
+            </optgroup>
+
+            <optgroup label="Europe">
+              <option>Spain</option>
+              <option>Italy</option>
+            </optgroup>
+          </select>
+
+          <br /><br />
+
+          <!-- Extra Question -->
+          <label>Preferred Stay:</label><br />
+          <select>
+            <option disabled selected>Select one</option>
+            <option>Resort</option>
+            <option>Hotel</option>
+            <option>Beach Cottage</option>
+          </select>
+
+          <br /><br />
+
+          <label>Comments:</label><br />
+          <textarea rows="4" cols="30"></textarea>
+
+          <br /><br />
+
+          <input type="submit" value="Register" />
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 All Rights Reserved | Beaches Around the World 🌊</p>
+    </footer>
+  </body>
+</html>
