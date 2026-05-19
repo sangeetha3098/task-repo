@@ -1,0 +1,172 @@
+Inline:
+
+<h1 style="property1:value;property2:value;property3:value;">
+<h1 style="property1:value;property2:value;property3:value;">
+<h1 style="property1:value;property2:value;property3:value;">
+<h1 style="property1:value;property2:value;property3:value;">
+<h1 style="property1:value;property2:value;property3:value;">
+<h1 style="property1:value;property2:value;property3:value;">
+<h1 style="property1:value;property2:value;property3:value;">
+<h1 style="property1:value;property2:value;property3:value;">
+<h1 style="property1:value;property2:value;property3:value;">
+<h1 style="property1:value;property2:value;property3:value;">
+<h1 style="property1:value;property2:value;property3:value;">
+<h1 style="property1:value;property2:value;property3:value;">
+<h1 style="property1:value;property2:value;property3:value;">
+<h1 style="property1:value;property2:value;property3:value;">
+<h1 style="property1:value;property2:value;property3:value;">
+<h1 style="property1:value;property2:value;property3:value;">
+<h1 style="property1:value;property2:value;property3:value;">
+<h1 style="property1:value;property2:value;property3:value;">
+<h1 style="property1:value;property2:value;property3:value;">
+<h1 style="property1:value;property2:value;property3:value;">
+
+External:
+
+selector {
+
+property1:value;
+
+property2:value;
+
+property3:value;
+
+}
+
+selector {
+
+property1:value;
+
+property2:value;
+
+property3:value;
+
+}
+
+selector {
+
+property1:value;
+
+property2:value;
+
+property3:value;
+
+}
+
+selector {
+    
+property1:value;
+
+property2:value;
+
+property3:value;
+
+}
+
+selector {
+    
+property1:value;
+
+property2:value;
+
+property3:value;
+
+}
+
+selector {
+
+property1:value;
+
+property2:value;
+
+property3:value:
+
+}
+
+selector {
+   
+ property1:value;
+
+property2:value;
+
+property3:value;
+
+}
+
+selector {
+    
+property1:value;
+
+property2:value;
+
+property3:value;
+
+}
+
+selector {
+    
+property1:value;
+
+property2:value;
+
+property3:value;
+
+}
+
+selector {
+    
+property1:value;
+
+property2:value;
+
+property3:value;
+
+}
+
+selector {
+    
+property1:value;
+
+property2:value;
+
+property3:value:
+}
+
+selector {
+    
+property1:value;
+
+property2:value:
+
+property3:value:
+
+}
+
+selector {
+    
+property1:value;
+
+property2:value;
+
+property3:value;
+}
+
+selector {
+    
+property1:value;
+
+property2:value;
+
+property3:value;
+
+}
+
+selector {
+    
+property1:value;
+
+property2:value;
+
+property3:value;
+
+}

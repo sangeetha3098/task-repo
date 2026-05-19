@@ -1,0 +1,27 @@
+div {
+    background-color: bisque;
+}
+
+h1 {
+    color: blueviolet;
+}
+
+p {
+    color: crimson;
+}
+
+h2 {
+    color: orange;
+}
+
+ol {
+    color: steelblue;
+}
+
+a {
+    color: goldenrod;
+}
+
+h3 {
+    color: rgb(86, 245, 86);
+}
