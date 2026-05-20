@@ -1,0 +1,54 @@
+.heading {
+    background-color: lightpink;
+    color: blueviolet;
+}
+
+.sub_heading {
+    color: orange;
+}
+
+#points {
+    background-color: beige;
+}
+
+*{
+    background-color: lightblue;
+}
+
+#list {
+    color: red;
+    border: 1px solid blue;
+}
+
+.content {
+    color: green;
+}
+
+.advantages {
+    color: blue;
+}
+
+p {
+    color: teal;
+}
+
+#how_it_works {
+    color: tomato;
+    
+}
+
+#pcolour {
+    color:darkgoldenrod;
+}
+
+h2 , h3 {
+    color: brown;
+}
+
+#disadvantages {
+    color: black;
+}
+
+.conclusion {
+    background-color: blueviolet;
+}
