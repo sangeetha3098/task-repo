@@ -68,6 +68,5 @@ p{
 .image img {
     width: 250px;
     height: 180px;
-    object-fit: cover;
     border-radius: 10px;
 }
