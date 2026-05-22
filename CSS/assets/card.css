@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    gap: 20px;
+}
+
+.card {
+    width: 350px;
+    height: 200px;
+    padding: 20px;
+    background-color: violet;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
