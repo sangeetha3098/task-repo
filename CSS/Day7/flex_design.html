@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Design</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../assets/flex_design.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-left">
+        <span class="back-arrow"><i class="fa-solid fa-arrow-left"></i></span>
+        <h1 class="course-code">SLAKKN_PYFSBE_270526</h1>
+        <button class="btn-copy">
+          <i class="fa-solid fa-link"></i> Copy URL
+        </button>
+      </div>
+      <div class="nav-right">
+        <div class="dropdown-preview">
+          <span><i class="fa-regular fa-eye"></i> Preview Course</span>
+        </div>
+      </div>
+    </header>
+
+    <nav class="tabs-container">
+      <a href="#" class="tab active">Course Details</a>
+      <a href="#" class="tab">Curriculum</a>
+      <a href="#" class="tab">Settings</a>
+      <a href="#" class="tab">Pricing</a>
+      <a href="#" class="tab">Drip</a>
+      <a href="#" class="tab">Reports</a>
+      <a href="#" class="tab">Discussion Forum</a>
+      <a href="#" class="tab">Publish</a>
+    </nav>
+
+    <main class="content-wrapper">
+      <section class="card info-card">
+        <h2 class="card-title">SLAKKN_PYFSBE_270526</h2>
+        <p class="subtitle">SLAKKN_PYFSBE_270526 - Python FS</p>
+
+        <p class="detail-row">
+          <strong>Course URL:</strong>
+          <a
+            href="https://learning.slainstitute.com/course/slakkn_pyfsbe_270526"
+            target="_blank"
+            class="course-url"
+          >
+            https://learning.slainstitute.com/course/slakkn_pyfsbe_270526
+          </a>
+          <a class="edit-link">Edit</a>
+        </p>
+
+        <div class="description-block">
+          <h3>Description</h3>
+          <p>Welcome to SLAKKN_PYFSBE_270526 - Python FS</p>
+        </div>
+
+        <p class="detail-row">
+          <strong>Category:</strong>
+          <span class="muted-text">You have not chosen any category yet.</span>
+        </p>
+      </section>
+
+      <section class="card thumbnail-card">
+        <h2 class="section-heading">Thumbnail</h2>
+
+        <div class="thumbnail-flex-container">
+          <div>
+            <img src="../assets/image/thumbnail.png" alt="thumbnail" />
+          </div>
+
+          <div class="thumbnail-details">
+            <h5>
+              <span style="font-weight: bold; color: black"> Note: </span>This
+              image tile will be used to represent this course across all your
+              academy's landing pages.
+            </h5>
+
+            <p>Allowed formats: ".jpg, .png, .jpeg, .gif, .webp, .sketch"</p>
+            <p>Preferred minimum resolution: 480 × 270</p>
+            <p>Maximum size: 150kb</p>
+
+            <button>Add Image</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card trainer-card">
+        <h2 class="section-heading">Trainer(s)</h2>
+
+        <button class="btn-add-trainer">
+          <span>Add Trainer</span>
+        </button>
+
+        <div class="trainer-row">
+          <div class="trainer-col trainer-profile">
+            <div class="trainer-logo">
+              <img src="../assets/image/sla.png" alt="SLA Logo" />
+            </div>
+            <div class="trainer-details">
+              <h3 class="trainer-name">SLA Trainer</h3>
+              <p class="trainer-email">slatrainer2@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="trainer-col trainer-role">
+            <span class="label">Role</span>
+            <span class="value">Admin(Trainer)</span>
+          </div>
+
+          <div class="trainer-col trainer-action">
+            <a href="#" class="edit-profile-link">Edit Profile</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
