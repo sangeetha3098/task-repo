@@ -5,6 +5,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background-color: #7f7f81;
   font-family: sans-serif;
   padding: 40px;
