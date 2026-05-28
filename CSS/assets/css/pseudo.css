@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.parent {
+    background-color: black;
+    padding: 30px;
+}
+
+.child {
+    background-color: aquamarine;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button{
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: yellow;
+    color: black;
+    font-weight: bolder;
+}
+
+.search{
+    color: black;
+    border: none;
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.search:focus{
+    background-color: lightcoral;
+    color: white;
+    border: none;
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
