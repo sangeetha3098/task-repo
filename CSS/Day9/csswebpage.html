@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Complete Website</title>
+    <link rel="stylesheet" href="../assets/css/css_webpage.css" />
+    <style>
+      .internal-demo {
+        color: darkblue;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CSS Complete Learning Website</h1>
+      <p>Learn CSS with Explanation</p>
+    </header>
+
+    <nav>
+      <a href="#intro">What is CSS</a>
+      <a href="#types">Types</a>
+      <a href="#selectors">Selectors</a>
+      <a href="#specificity">Specificity</a>
+      <a href="#boxmodel">Box Model</a>
+      <a href="#colors">Colors</a>
+      <a href="#units">Units</a>
+      <a href="#background">Background</a>
+      <a href="#flex">Flexbox</a>
+      <a href="#grid">Grid</a>
+      <a href="#pseudo">Pseudo</a>
+      <a href="#transform">Transform</a>
+      <a href="#transition">Transition</a>
+      <a href="#position">Position</a>
+      <a href="#zindex">Z-index</a>
+      <a href="#media">Media Query</a>
+    </nav>
+
+    <main>
+      <section id="intro" class="card">
+        <h2>1. What is CSS?</h2>
+        <p>
+          CSS stands for <strong>Cascading Style Sheets</strong>.It is used to design webpage and layout and style.CSS helps for making a webpage looking good and it is userfriendly design.Basically layout is a design of your webpage . It decides which content in which place to show on your screen.
+        </p>
+
+        <h3>Why CSS is Used</h3>
+        <ul>
+          <li>Add colors and fonts</li>
+          <li>Create layouts</li>
+          <li>Improve user interface</li>
+          <li>Make websites responsive</li>
+          <li>Add transition and effects</li>
+        </ul>
+
+        <h3>Basic CSS Syntax</h3>
+        <pre class="code-box"><code>p {
+  color: blue;
+  font-size: 20px;
+}</code></pre>
+
+        <p>Here:</p>
+        <ul>
+          <li>p → Selector</li>
+          <li>color → Property</li>
+          <li>blue → Value</li>
+        </ul>
+      </section>
+
+      <section id="types" class="card">
+        <h2>2. Types of CSS</h2>
+        <h3>Inline CSS</h3>
+        <p>Inline CSS is written inside HTML element using style attribute.</p>
+        <pre class="code-box"><code>&lt;p style="color:red"&gt;Hello&lt;/p&gt;</code></pre>
+        <p style="color: red">Inline CSS Example</p>
+
+        <h3>Internal CSS</h3>
+        <p>Internal CSS is written inside style tag in head section.</p>
+        <pre class="code-box"><code>&lt;style&gt; p{ color:blue; } &lt;/style&gt;</code></pre>
+        <p class="internal-demo">Internal CSS Example</p>
+
+        <h3>External CSS</h3>
+        <p>External CSS is written in separate .css file and linked to HTML.</p>
+        <pre class="code-box"><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></pre>
+        <p class="external-demo">External CSS Example</p>
+      </section>
+
+      <section id="selectors" class="card">
+        <h2>3. CSS Selectors</h2>
+        <p>Selectors target HTML elements.</p>
+
+        <h3>Universal Selector *</h3>
+        <p>Selects all elements.</p>
+        <pre class="code-box"><code>*{ 
+          margin:0;
+          padding:0;
+          box-sizing:border-box }
+        </code></pre>
+
+        <h3>Element Selector</h3>
+        <pre class="code-box"><code>p{ color:blue; }</code></pre>
+        <div class="selector-demo">Element Selector Output</div>
+
+        <h3>Class Selector</h3>
+        <pre class="code-box"><code>.box{ background:pink; }</code></pre>
+        <div class="class-demo">Class Selector Output</div>
+
+        <h3>ID Selector</h3>
+        <pre class="code-box"><code>#box{ color:red; }</code></pre>
+        <div id="id-demo">ID Selector Output</div>
+
+        <h3>Group Selector</h3>
+        <p>Applies same style to multiple elements.</p>
+        <pre class="code-box"><code>h1,h2,p{ color:green; }</code></pre>
+
+        <h3>Descendant Selector</h3>
+        <pre class="code-box"><code>div p{ color:purple; }</code></pre>
+        <div class="descendant">
+          <p>Descendant Selector Example</p>
+        </div>
+
+        <h3>Attribute Selector</h3>
+        <pre class="code-box"><code>input[type="text"]</code></pre>
+        <input type="text" placeholder="Attribute selector" />
+      </section>
+
+      <section id="specificity" class="card">
+        <h2>4. CSS Specificity</h2>
+        <p>
+          Specificity decides which CSS style gets highest priority when
+          multiple styles target same element.
+        </p>
+
+        <h3>Priority Order</h3>
+        <ul>
+          <li>Inline CSS → Highest</li>
+          <li>ID Selector</li>
+          <li>Class / Attribute / Pseudo-class</li>
+          <li>Element Selector → Lowest</li>
+        </ul>
+        <pre class="code-box"><code>#box{ color:red; } .box{ color:blue; }</code></pre>
+        <p id="specificity-demo" class="specificity-class">
+          ID wins over Class
+        </p>
+      </section>
+
+      <section id="boxmodel" class="card">
+        <h2>5. CSS Box Model</h2>
+        <p>Every HTML element is treated as a box. Box model contains:</p>
+        <ul>
+          <li>Content</li>
+          <li>Padding</li>
+          <li>Border</li>
+          <li>Margin</li>
+        </ul>
+
+        <h3>Content</h3>
+        <p>Actual text or image inside element.</p>
+
+        <h3>Padding</h3>
+        <p>Space between content and border.</p>
+
+        <h3>Border</h3>
+        <p>Line surrounding padding and content.</p>
+
+        <h3>Margin</h3>
+        <p>Outer space outside border.</p>
+        <pre class="code-box"><code>padding:20px; border:5px solid blue; margin:20px;</code></pre>
+        <div class="box-model-demo">Box Model Example</div>
+      </section>
+
+      <section id="colors" class="card">
+        <h2>6. CSS Colors</h2>
+        <p>CSS supports multiple color formats.</p>
+
+        <h3>Named Color</h3>
+        <div class="named-color">Red Color</div>
+
+        <h3>HEX Color</h3>
+        <div class="hex-color">#4CAF50</div>
+
+        <h3>RGB Color</h3>
+        <div class="rgb-color">rgb(0,0,255)</div>
+
+        <h3>RGBA Color</h3>
+        <div class="rgba-color">rgba with opacity</div>
+        <pre class="code-box"><code>rgb(255,0,0) rgba(255,0,0,.5)</code></pre>
+      </section>
+
+      <section id="units" class="card">
+        <h2>7. CSS Units</h2>
+        <p>Units define size of elements.</p>
+
+        <h3>px</h3>
+        <div class="px-box">100px</div>
+
+        <h3>%</h3>
+        <div class="percent-box">50%</div>
+
+        <h3>em</h3>
+        <div class="em-box">2em</div>
+
+        <h3>rem</h3>
+        <div class="rem-box">2rem</div>
+
+        <h3>vh</h3>
+        <div class="vh-box">20vh</div>
+
+        <h3>vw</h3>
+        <div class="vw-box">50vw</div>
+      </section>
+
+      <section id="background" class="card">
+        <h2>8. Background Properties</h2>
+        <p>Background properties style element backgrounds.</p>
+        <ul>
+          <li>background-color</li>
+          <li>background-image</li>
+          <li>background-size</li>
+          <li>background-position</li>
+          <li>background-repeat</li>
+        </ul>
+        
+        <div class="background-demo">Background Example</div>
+      </section>
+
+      <section id="flex" class="card">
+        <h2>9. Flexbox</h2>
+        <p>Flexbox is a one dimensional layout.It works row or column wise to make a responsive webpage.Flex is the most used layout system in css.</p>
+        <ul>
+          <li>display:flex</li>
+          <li>justify-content</li>
+          <li>align-items</li>
+          <li>flex-direction</li>
+          <li>gap</li>
+        </ul>
+        <pre class="code-box"><code>display:flex; justify-content:center; gap:20px;</code></pre>
+        <div class="flex-container">
+          <div class="flex-item">1</div>
+          <div class="flex-item">2</div>
+          <div class="flex-item">3</div>
+        </div>
+      </section>
+
+      <section id="grid" class="card">
+        <h2>10. CSS Grid</h2>
+        <p>Grid is a two dimensional layout.It can be designed row and column wise.Complex responsive layout use grid.Mainly grid is used for Dashboard layouts,website sections and cards design and gallery layout.</p>
+        <pre class="code-box"><code>display:grid; grid-template-columns: repeat(2,1fr);</code></pre>
+        <div class="grid-container">
+          <div class="grid-item">1</div>
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+        </div>
+      </section>
+
+      <section id="pseudo" class="card">
+        <h2>11. Pseudo Classes and Elements</h2>
+        <h3>Pseudo Class</h3>
+        <p>Pseudo classes style special state. Example :hover</p>
+        <button class="hover-btn">Hover Me</button>
+
+        <h3>Pseudo Elements</h3>
+        <p>Pseudo elements style part of element.</p>
+        <p class="first-letter-demo">Pseudo element example text.</p>
+        <pre class="code-box"><code>::first-letter { font-size:40px; }</code></pre>
+      </section>
+
+      <section id="transform" class="card">
+        <h2>12. Transform</h2>
+        <p>Transform changes position, size or rotation of elements.</p>
+
+        <h3>Translate</h3>
+        <p>translate() moves element.</p>
+        <pre class="code-box"><code>transform: translate(30px,20px);</code></pre>
+        <div class="transform-box">Translate Example</div>
+
+        <h3>Scale</h3>
+        <p>scale() changes size.</p>
+        <div class="scale-box">Scale Hover</div>
+
+        <h3>Rotate</h3>
+        <p>rotate() rotates element.</p>
+        <div class="rotate-box">Rotate</div>
+      </section>
+
+      <section id="transition" class="card">
+        <h2>13. Transition</h2>
+        <p>Transition creates smooth animation between states.</p>
+        <ul>
+          <li>transition-property</li>
+          <li>transition-duration</li>
+          <li>transition-delay</li>
+          <li>timing-function</li>
+        </ul>
+        <pre class="code-box"><code>transition:.5s;</code></pre>
+        <div class="transition-box">Hover Me</div>
+      </section>
+
+      <section id="position" class="card">
+        <h2>14. CSS Position</h2>
+        <p>Position controls element placement.</p>
+        <ul>
+          <li>static</li>
+          <li>relative</li>
+          <li>absolute</li>
+          <li>fixed</li>
+          <li>sticky</li>
+        </ul>
+        <div class="position-parent">
+          <div class="relative-box">Relative</div>
+          <div class="absolute-box">Absolute</div>
+        </div>
+      </section>
+
+      <section id="zindex" class="card">
+        <h2>15. Z-index</h2>
+        <p>
+          z-index controls stacking order of overlapping elements. Higher value
+          stays on top.
+        </p>
+        <div class="z-container">
+          <div class="z1">1</div>
+          <div class="z2">2</div>
+        </div>
+      </section>
+
+      <section id="media" class="card">
+        <h2>16. Media Query</h2>
+        <p>
+          Media query creates responsive webpages. Layout changes based on
+          screen size.
+        </p>
+        <pre class="code-box"><code>@media(max-width:768px)</code></pre>
+        <p>Resize browser to see responsive layout.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>CSS Learning Website</p>
+    </footer>
+  </body>
+</html>
