@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aura Spa & Glow Studio</title>
+    <link rel="stylesheet" href="../assets/css/project.css" />
+  </head>
+  <body>
+    <!-- HEADER & NAVIGATION -->
+    <header class="main-header">
+      <div class="header-container">
+        <!-- Logo Section -->
+        <div class="logo">
+          <img src="../assets/image/aura_spa/logo.svg" />
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="navbar">
+          <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-cta">
+          <a href="#booking" class="btn-nav">Book Session</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- BANNER SECTION -->
+    <section id="home" class="hero-banner">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-subtitle">Welcome to Pure Serenity</span>
+        <h1 class="hero-title">Rediscover Your<br />Natural Glow</h1>
+        <p class="hero-description">
+          Experience premium skin, body, and hair rituals crafted to harmonize
+          your body and mind in an oasis of luxury.
+        </p>
+        <div class="hero-buttons">
+          <a href="#services" class="btn btn-primary">Explore Services</a>
+          <a href="#booking" class="btn btn-secondary">Reserve Now</a>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services-section">
+      <div class="section-header">
+        <span class="section-subtitle">Our Specialties</span>
+        <h2 class="section-title">Premium Wellness Rituals</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="card-image-wrap">
+            <img
+              src="../assets/image/aura_spa/masage.png"
+              alt="Therapeutic Massage Session"
+            />
+            <span class="card-price">₹4000</span>
+          </div>
+          <div class="card-body">
+            <h3>Aromatherapy Massage</h3>
+            <p>
+              Melt muscle stress away with customized deep tissue strokes and
+              premium organic essential oils.
+            </p>
+            <a href="#booking" class="card-btn">Select Service</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="card-image-wrap">
+            <img
+              src="../assets/image/aura_spa/facial.jpg"
+              alt="Radiant Facial Therapy"
+            />
+            <span class="card-price">₹2999</span>
+          </div>
+          <div class="card-body">
+            <h3>Glow Signature Facial</h3>
+            <p>
+              Deep skin detoxification combined with custom enzyme peeling
+              therapy for immediate luminosity.
+            </p>
+            <a href="#booking" class="card-btn">Select Service</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="card-image-wrap">
+            <img
+              src="../assets/image/aura_spa/room.webp"
+              alt="Premium Hair Salon Session"
+            />
+            <span class="card-price">₹1800</span>
+          </div>
+          <div class="card-body">
+            <h3>Artistic Hair Styling</h3>
+            <p>
+              Precision couture cuts, color balayage treatments, and deep
+              botanical restructuring masks.
+            </p>
+            <a href="#booking" class="card-btn">Select Service</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="gallery-section">
+      <div class="section-header">
+        <span class="section-subtitle">Real Results</span>
+        <h2 class="section-title">The Transformation Gallery</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img
+            src="../assets/image/aura_spa/hair_dry.avif"
+            alt="Transformation Result 1"
+          />
+          <div class="gallery-overlay-text">Bridal Radiance</div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="../assets/image/aura_spa/balayage.png"
+            alt="Transformation Result 2"
+          />
+          <div class="gallery-overlay-text">Balayage Revamp</div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="../assets/image/aura_spa/kit.avif"
+            alt="Transformation Result 3"
+          />
+          <div class="gallery-overlay-text">Lash Lifting</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPOINTMENT BOOKING SECTION -->
+    <section id="booking" class="booking-section">
+      <div class="booking-container">
+        <div class="booking-info-pane">
+          <h2>Begin Your Journey to Relaxation</h2>
+          <p>
+            Appointments fill rapidly. Reserve your time slot instantly using
+            our digital desk setup. For customizable bridal or group packaging,
+            contact center management directly.
+          </p>
+          <div class="contact-bullets">
+            <p>
+              📍 1st floor MG Road,Montorsier ST,near New Medical
+              Hospital,Puducherry-605001
+            </p>
+            <p>📞 +91 9845783566</p>
+            <p>🕒 Mon - Sun: 9:00 AM - 8:00 PM</p>
+          </div>
+        </div>
+
+        <div class="booking-form-pane">
+          <form class="appointment-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="E.g., Riya"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Enter Number"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Select Service Treatment</label>
+              <select id="service" required>
+                <option value="" disabled selected>
+                  Choose your experience...
+                </option>
+                <option value="massage">Aromatherapy Massage (₹4000)</option>
+                <option value="facial">Glow Signature Facial (₹2999)</option>
+                <option value="hair">Artistic Hair Styling (₹1800)</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" required />
+              </div>
+              <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" required />
+              </div>
+            </div>
+
+            <button type="submit" class="form-submit-btn">
+              Confirm Reservation
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section id="reviews" class="reviews-section">
+      <div class="section-header">
+        <span class="section-subtitle">Client Stories</span>
+        <h2 class="section-title">Shared Experiences</h2>
+      </div>
+
+      <div class="reviews-container">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">
+            "The ambiance inside Aura Spa is breathtaking. The massage was
+            therapeutic, and the glassmorphic luxury design extends from their
+            web booking to reality."
+          </p>
+          <h4 class="client-name">Mugesh</h4>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">
+            "My skin has never glowed like this before. The Signature Facial was
+            thoroughly relaxing, and the aesthetic staff made me feel
+            prioritized throughout."
+          </p>
+          <h4 class="client-name">Natania</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col brand-col">
+          <h3>
+            <img style="width: 300px" src="../assets/image/aura_spa/logo.svg" />
+          </h3>
+          <p>
+            Curating sanctuary atmospheres and luxury physical cosmetic
+            enhancement practices under ethical guidelines.
+          </p>
+        </div>
+        <div class="footer-col links-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="footer-col hours-col">
+          <h4>Operating Hours</h4>
+          <p>Weekday: 9:00 AM – 8:00 PM</p>
+          <p>Saturday: 9:00 AM – 6:00 PM</p>
+          <p>Sunday: 10:00 AM – 4:00 PM</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aura Spa & Glow Studio. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

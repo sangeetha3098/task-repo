@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Tailwind Practice</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center bg-blue-600 p-4 shadow-lg">
+
+    <!-- Logo -->
+    <div class="text-white text-2xl font-bold">
+      MyWebsite
+    </div>
+
+    <div class="flex items-center gap-6">
+
+      <!-- Menu -->
+      <ul class="flex gap-6">
+        <li><a href="#" class="text-white text-lg hover:text-yellow-300">Home</a></li>
+        <li><a href="#" class="text-white text-lg hover:text-yellow-300">About</a></li>
+        <li><a href="#" class="text-white text-lg hover:text-yellow-300">Services</a></li>
+        <li><a href="#" class="text-white text-lg hover:text-yellow-300">Contact</a></li>
+      </ul>
+
+      <!-- Button -->
+      <button class="bg-yellow-400 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-300">
+        Login
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Heading -->
+  <section class="text-center mt-10">
+    <h1 class="text-4xl font-bold text-blue-700">
+      Tailwind CSS
+    </h1>
+    <p class="text-gray-600 mt-2 text-lg">
+      Using bg-white, shadow-lg, rounded-lg and p-5
+    </p>
+  </section>
+
+  <!-- Grid Section -->
+  <section class="grid grid-cols-3 gap-6 p-8">
+
+    <!-- Card 1 -->
+    <div class="bg-white shadow-lg rounded-lg p-5">
+      <img src="../assets/image/mountain.jpg" class="rounded-lg w-full">
+      <h2 class="text-xl font-bold mt-3 text-blue-600">Nature</h2>
+      <p class="text-gray-600 mt-2">
+        Beautiful nature scenery with mountains and sky.
+      </p>
+      <button class="bg-blue-500 text-white px-4 py-2 mt-4 rounded-lg hover:bg-blue-700">
+        Read More
+      </button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-white shadow-lg rounded-lg p-5">
+      <img src="../assets/image/cave.jpg" class="rounded-lg w-full">
+      <h2 class="text-xl font-bold mt-3 text-green-600">Travel</h2>
+      <p class="text-gray-600 mt-2">
+        Explore new places and enjoy adventures.
+      </p>
+      <button class="bg-green-500 text-white px-4 py-2 mt-4 rounded-lg hover:bg-green-700">
+        Explore
+      </button>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white shadow-lg rounded-lg p-5">
+      <img src="../assets/image/field.jpg" class="rounded-lg w-full">
+      <h2 class="text-xl font-bold mt-3 text-red-600">Food</h2>
+      <p class="text-gray-600 mt-2">
+        Delicious foods and tasty dishes to enjoy.
+      </p>
+      <button class="bg-red-500 text-white px-4 py-2 mt-4 rounded-lg hover:bg-red-700">
+        Order
+      </button>
+    </div>
+
+  </section>
+
+</body>
+</html>

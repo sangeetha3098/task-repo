@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="100%" height="100%">
+  <!-- Definitions for luxury gradient effects -->
+  <defs>
+    <linearGradient id="roseGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" />
+      <stop offset="50%" stop-color="#bfa38a" />
+      <stop offset="100%" stop-color="#a3856d" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(10, 10)">
+    <!-- Elegant Minimalist Lotus Emblem -->
+    <g transform="translate(0, 10)">
+      <!-- Left Petal -->
+      <path d="M 30 40 C 10 25, 5 10, 30 0 C 20 15, 20 30, 30 40 Z" fill="url(#roseGold)" opacity="0.8"/>
+      <!-- Right Petal -->
+      <path d="M 30 40 C 50 25, 55 10, 30 0 C 40 15, 40 30, 30 40 Z" fill="url(#roseGold)" opacity="0.8"/>
+      <!-- Center Lotus Bud Crown -->
+      <path d="M 30 40 C 20 20, 30 5, 30 5 C 30 5, 40 20, 30 40 Z" fill="#2c2520"/>
+      <!-- Elegant Under-curve Accent -->
+      <path d="M 12 38 Q 30 48 48 38" stroke="url(#roseGold)" stroke-width="2" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Typography (Aura Spa) -->
+    <!-- "Aura" - Premium Luxury Serif Font Styling -->
+    <text x="75" y="44" 
+          font-family="'Cormorant Garamond', 'Georgia', serif" 
+          font-size="36px" 
+          font-weight="600" 
+          font-style="italic" 
+          fill="url(#roseGold)" 
+          letter-spacing="1">Aura</text>
+
+    <!-- "Spa" - Modern Clean Geometric Contrast -->
+    <text x="160" y="44" 
+          font-family="'Montserrat', 'Helvetica', sans-serif" 
+          font-size="28px" 
+          font-weight="300" 
+          fill="#2c2520" 
+          letter-spacing="3">SPA</text>
+
+    <!-- Tiny Sub-tagline -->
+    <text x="77" y="58" 
+          font-family="'Montserrat', sans-serif" 
+          font-size="8.5px" 
+          font-weight="400" 
+          fill="#6e655f" 
+          letter-spacing="5" 
+          opacity="0.8">GLOW STUDIO</text>
+  </g>
+</svg>
