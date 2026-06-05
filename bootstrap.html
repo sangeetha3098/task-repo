@@ -11,20 +11,19 @@
 
   <body class="bg-gray-100">
     <!-- Navbar -->
-    <header class="bg-pink-600 text-white shadow-lg sticky top-0">
+    <header class="bg-pink-600 text-white shadow-lg sticky top-0 z-50">
       <nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
         <h1 class="text-2xl font-bold">Frontend Portfolio</h1>
 
-        <div class="space-x-4">
-          <a
-            href="index.html"
-            class="bg-white text-pink-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100"
-          >
-            Home
-          </a>
-        </div>
+        <a
+          href="index.html"
+          class="bg-white text-pink-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition"
+        >
+          Home
+        </a>
       </nav>
     </header>
+
     <!-- Banner -->
     <section
       class="bg-gradient-to-r from-pink-500 to-purple-600 text-white py-20 text-center"
@@ -34,45 +33,189 @@
       <p class="text-xl">Bootstrap • Tailwind CSS • Responsive Design</p>
     </section>
 
+    <!-- Portfolio Cards -->
     <section class="max-w-7xl mx-auto px-6 py-16">
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Bootstrap -->
-        <div class="bg-white p-6 rounded-2xl shadow-lg">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start"
+      >
+        <!-- Day 10 -->
+        <div
+          class="bg-white p-6 rounded-2xl shadow-lg hover:scale-105 hover:shadow-2xl transition duration-300"
+        >
           <h3 class="text-2xl font-bold text-pink-600 mb-4">
             Day 10 Bootstrap
           </h3>
 
           <ul class="space-y-3">
             <li>
-              <a href="Bootstrap/Day1/intro.html" target="_blank">
+              <a
+                href="Bootstrap/Day1/intro.html"
+                target="_blank"
+                class="hover:text-pink-600"
+              >
                 Bootstrap Example
               </a>
             </li>
           </ul>
         </div>
 
-        <!-- Tailwind Day 11 -->
-        <div class="bg-white p-6 rounded-2xl shadow-lg">
-          <h3 class="text-2xl font-bold text-pink-600 mb-4">Day 11 tailwindcss</h3>
+        <!-- Day 11 -->
+        <div
+          class="bg-white p-6 rounded-2xl shadow-lg hover:scale-105 hover:shadow-2xl transition duration-300"
+        >
+          <h3 class="text-2xl font-bold text-pink-600 mb-4">
+            Day 11 Tailwind CSS
+          </h3>
 
           <ul class="space-y-3">
-            <li><a href="Bootstrap/Day2/tailwindcss.html">Card Layout</a></li>
-            <li><a href="Bootstrap/Day2/task_two.html">Grid Layout</a></li>
-            <li><a href="Bootstrap/Day2/task_three.html">Navbar</a></li>
-            <li><a href="Bootstrap/Day2/task_four.html">Profile Card</a></li>
-            <li><a href="Bootstrap/Day2/task_five.html">Gallery</a></li>
+            <li>
+              <a
+                href="Bootstrap/Day2/tailwindcss.html"
+                target="_blank"
+                class="hover:text-pink-600"
+                >Card Layout</a
+              >
+            </li>
+            <li>
+              <a
+                href="Bootstrap/Day2/task_two.html"
+                target="_blank"
+                class="hover:text-pink-600"
+                >Grid Layout</a
+              >
+            </li>
+            <li>
+              <a
+                href="Bootstrap/Day2/task_three.html"
+                target="_blank"
+                class="hover:text-pink-600"
+                >Navbar</a
+              >
+            </li>
+            <li>
+              <a
+                href="Bootstrap/Day2/task_four.html"
+                target="_blank"
+                class="hover:text-pink-600"
+                >Profile Card</a
+              >
+            </li>
+            <li>
+              <a
+                href="Bootstrap/Day2/task_five.html"
+                target="_blank"
+                class="hover:text-pink-600"
+                >Gallery</a
+              >
+            </li>
           </ul>
         </div>
 
-        <!-- Tailwind Day 12 -->
-        <div class="bg-white p-6 rounded-2xl shadow-lg">
+        <!-- Day 12 -->
+        <div
+          class="bg-white p-6 rounded-2xl shadow-lg hover:scale-105 hover:shadow-2xl transition duration-300"
+        >
           <h3 class="text-2xl font-bold text-pink-600 mb-4">Day 12</h3>
 
           <ul class="space-y-3">
-            <li><a href="Bootstrap/Day3/course.html">Course Layout</a></li>
-            <li><a href="Bootstrap/Day3/dashboard.html">Dashboard Page</a></li>
-            <li><a href="Bootstrap/Day3/landing_page.html">Landing Page</a></li>
+            <li>
+              <a
+                href="Bootstrap/Day3/course.html"
+                target="_blank"
+                class="hover:text-pink-600"
+                >Course Layout</a
+              >
+            </li>
+            <li>
+              <a
+                href="Bootstrap/Day3/dashboard.html"
+                target="_blank"
+                class="hover:text-pink-600"
+                >Dashboard Page</a
+              >
+            </li>
+            <li>
+              <a
+                href="Bootstrap/Day3/landing_page.html"
+                target="_blank"
+                class="hover:text-pink-600"
+                >Landing Page</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Day 13 -->
+        <div
+          class="bg-white p-6 rounded-2xl shadow-lg hover:scale-105 hover:shadow-2xl transition duration-300"
+        >
+          <h3 class="text-2xl font-bold text-pink-600 mb-4">Day 13</h3>
+
+          <ul class="space-y-3">
+            <li>
+              <a
+                href="Bootstrap/Day4/course_website_boot.html"
+                target="_blank"
+                class="hover:text-pink-600"
+                >Course Website Bootstrap</a
+              >
+            </li>
+            <li>
+              <a
+                href="Bootstrap/Day4/tailwind_website.html"
+                target="_blank"
+                class="hover:text-pink-600"
+                >Course Website Tailwind</a
+              >
+            </li>
+            <li>
+              <a
+                href="Bootstrap/Day4/dashboard.html"
+                target="_blank"
+                class="hover:text-pink-600"
+                >Dashboard</a
+              >
+            </li>
+            <li>
+              <a
+                href="Bootstrap/Day4/e_commerce.html"
+                target="_blank"
+                class="hover:text-pink-600"
+                >E-Commerce Webpage</a
+              >
+            </li>
+            <li>
+              <a
+                href="Bootstrap/Day4/landing.html"
+                target="_blank"
+                class="hover:text-pink-600"
+                >Landing Page</a
+              >
+            </li>
+            <li>
+              <a
+                href="Bootstrap/Day4/student.html"
+                target="_blank"
+                class="hover:text-pink-600"
+                >Student Webpage</a
+              >
+            </li>
+            <li>
+              <a
+                href="Bootstrap/Day4/user_details.html"
+                target="_blank"
+                class="hover:text-pink-600"
+                >User Details Webpage</a
+              >
+            </li>
+            <li>
+              <a
+                href="Bootstrap/Day4/login.html"
+                target="_blank"
+                class="hover:text-pink-600"
+                >Login Page</a
+              >
+            </li>
           </ul>
         </div>
       </div>

@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Course Website</title>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white shadow-lg">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold">TechNova</h1>
+
+        <ul class="flex gap-6 font-medium">
+          <li>
+            <a href="#" class="hover:text-blue-200 transition"> Home </a>
+          </li>
+
+          <li>
+            <a href="#" class="hover:text-blue-200 transition"> Courses </a>
+          </li>
+
+          <li>
+            <a href="#" class="hover:text-blue-200 transition"> About </a>
+          </li>
+
+          <li>
+            <a href="#" class="hover:text-blue-200 transition"> Contact </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-white py-16">
+      <div class="max-w-5xl mx-auto text-center px-6">
+        <h1 class="text-5xl font-bold text-gray-800 mb-4">
+          Learn New Skills Online
+        </h1>
+
+        <p class="text-lg text-gray-600 mb-6">
+          Choose from our top-rated courses and start learning today.
+        </p>
+
+        <a
+          href="#"
+          class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+        >
+          Explore Courses
+        </a>
+      </div>
+    </section>
+
+    <!-- Course Cards -->
+    <section class="max-w-7xl mx-auto px-6 py-12">
+      <h2 class="text-3xl font-bold text-center mb-8">Popular Courses</h2>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+      >
+        <!-- Card 1 -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden"
+        >
+          <img
+            src="../assets/image/sea_view.jpg"
+            alt=""
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-5">
+            <h3 class="text-xl font-bold">HTML Basics</h3>
+            <p class="text-gray-600 mt-2">Learn HTML from scratch.</p>
+            <button
+              class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+            >
+              Enroll
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden"
+        >
+          <img
+            src="../assets/image/sea_view.jpg"
+            alt=""
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-5">
+            <h3 class="text-xl font-bold">CSS Mastery</h3>
+            <p class="text-gray-600 mt-2">Build beautiful websites.</p>
+            <button
+              class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+            >
+              Enroll
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden"
+        >
+          <img
+            src="../assets/image/sea_view.jpg"
+            alt=""
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-5">
+            <h3 class="text-xl font-bold">JavaScript</h3>
+            <p class="text-gray-600 mt-2">Interactive web development.</p>
+            <button
+              class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+            >
+              Enroll
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden"
+        >
+          <img
+            src="../assets/image/sea_view.jpg"
+            alt=""
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-5">
+            <h3 class="text-xl font-bold">Bootstrap</h3>
+            <p class="text-gray-600 mt-2">Responsive web design.</p>
+            <button
+              class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+            >
+              Enroll
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden"
+        >
+          <img
+            src="../assets/image/sea_view.jpg"
+            alt=""
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-5">
+            <h3 class="text-xl font-bold">Tailwind CSS</h3>
+            <p class="text-gray-600 mt-2">Utility-first styling.</p>
+            <button
+              class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+            >
+              Enroll
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden"
+        >
+          <img
+            src="../assets/image/sea_view.jpg"
+            alt=""
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-5">
+            <h3 class="text-xl font-bold">React JS</h3>
+            <p class="text-gray-600 mt-2">Modern frontend framework.</p>
+            <button
+              class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+            >
+              Enroll
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden"
+        >
+          <img
+            src="../assets/image/sea_view.jpg"
+            alt=""
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-5">
+            <h3 class="text-xl font-bold">Node JS</h3>
+            <p class="text-gray-600 mt-2">Backend development.</p>
+            <button
+              class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+            >
+              Enroll
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-xl transition overflow-hidden"
+        >
+          <img
+            src="../assets/image/sea_view.jpg"
+            alt=""
+            class="w-full h-48 object-cover"
+          />
+          <div class="p-5">
+            <h3 class="text-xl font-bold">Python</h3>
+            <p class="text-gray-600 mt-2">Programming fundamentals.</p>
+            <button
+              class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+            >
+              Enroll
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-4">
+      <p>© 2026 CourseHub. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

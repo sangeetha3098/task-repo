@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Student Management UI</title>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-pink-600 text-white shadow">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold">Student Manager</h1>
+
+        <ul class="flex gap-6">
+          <li><a href="#" class="hover:text-gray-200">Home</a></li>
+          <li><a href="#" class="hover:text-gray-200">Students</a></li>
+          <li><a href="#" class="hover:text-gray-200">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Add Student Form -->
+    <section class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow mt-8">
+      <h2 class="text-2xl font-bold mb-4">Add Student</h2>
+
+      <div class="grid md:grid-cols-2 gap-4">
+        <input
+          type="text"
+          placeholder="Student Name"
+          class="border p-3 rounded-lg"
+        />
+
+        <input type="text" placeholder="Course" class="border p-3 rounded-lg" />
+
+        <input type="email" placeholder="Email" class="border p-3 rounded-lg" />
+
+        <input
+          type="tel"
+          placeholder="Phone Number"
+          class="border p-3 rounded-lg"
+        />
+      </div>
+
+      <button
+        class="mt-4 bg-pink-600 text-white px-6 py-2 rounded-lg hover:bg-pink-700"
+      >
+        Add Student
+      </button>
+    </section>
+
+    <!-- Search Bar -->
+    <section class="flex justify-center mt-8">
+      <input
+        type="text"
+        placeholder="Search Student..."
+        class="w-80 p-3 border rounded-lg bg-white shadow"
+      />
+    </section>
+
+    <!-- Student Cards -->
+    <section class="max-w-7xl mx-auto p-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Student Card 1 -->
+        <div class="bg-white rounded-xl shadow p-5 text-center">
+          <img
+            src="../assets/image/bridge.jpg"
+            alt="Student"
+            class="w-24 h-24 rounded-full mx-auto"
+          />
+
+          <h3 class="text-xl font-bold mt-4">John</h3>
+
+          <p class="text-gray-600">Full Stack Development</p>
+
+          <p class="text-sm mt-2">john@gmail.com</p>
+
+          <p class="text-sm">9876543210</p>
+
+          <div class="flex justify-center gap-3 mt-4">
+            <button
+              class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+            >
+              Edit
+            </button>
+
+            <button
+              class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+
+        <!-- Student Card 2 -->
+        <div class="bg-white rounded-xl shadow p-5 text-center">
+          <img
+            src="../assets/image/forest_one.jpg"
+            alt="Student"
+            class="w-24 h-24 rounded-full mx-auto"
+          />
+
+          <h3 class="text-xl font-bold mt-4">Sarah</h3>
+
+          <p class="text-gray-600">UI / UX Design</p>
+
+          <p class="text-sm mt-2">sarah@gmail.com</p>
+
+          <p class="text-sm">9876543211</p>
+
+          <div class="flex justify-center gap-3 mt-4">
+            <button
+              class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+            >
+              Edit
+            </button>
+
+            <button
+              class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+
+        <!-- Student Card 3 -->
+        <div class="bg-white rounded-xl shadow p-5 text-center">
+          <img
+            src="../assets/image/sea_view.jpg"
+            alt="Student"
+            class="w-24 h-24 rounded-full mx-auto"
+          />
+
+          <h3 class="text-xl font-bold mt-4">David</h3>
+
+          <p class="text-gray-600">Python Programming</p>
+
+          <p class="text-sm mt-2">david@gmail.com</p>
+
+          <p class="text-sm">9876543212</p>
+
+          <div class="flex justify-center gap-3 mt-4">
+            <button
+              class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+            >
+              Edit
+            </button>
+
+            <button
+              class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+
+        <!-- Student Card 4 -->
+        <div class="bg-white rounded-xl shadow p-5 text-center">
+          <img
+            src="../assets/image/mountain.jpg"
+            alt="Student"
+            class="w-24 h-24 rounded-full mx-auto"
+          />
+
+          <h3 class="text-xl font-bold mt-4">Priya</h3>
+
+          <p class="text-gray-600">React Development</p>
+
+          <p class="text-sm mt-2">priya@gmail.com</p>
+
+          <p class="text-sm">9876543213</p>
+
+          <div class="flex justify-center gap-3 mt-4">
+            <button
+              class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+            >
+              Edit
+            </button>
+
+            <button
+              class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pink-600 text-white text-center py-4 mt-8">
+      <p>© 2026 Student Manager. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

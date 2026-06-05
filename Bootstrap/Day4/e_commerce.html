@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <title>ShopEasy Store</title>
+  </head>
+
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white shadow-md">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between gap-4"
+      >
+        <!-- Logo -->
+        <h1 class="text-3xl font-bold">ShopEasy</h1>
+
+        <!-- Search -->
+        <div class="relative w-full md:w-96">
+          <input
+            type="text"
+            placeholder="Search Products..."
+            class="w-full p-3 rounded-lg text-black focus:outline-none focus:ring-0 bg-white pl-10"
+          />
+
+          <i
+            class="fa-solid fa-magnifying-glass absolute left-3 top-4 text-gray-500"
+          ></i>
+        </div>
+
+        <!-- Cart -->
+        <button
+          class="bg-white text-blue-600 px-5 py-3 rounded-lg font-semibold hover:bg-gray-200"
+        >
+          <i class="fa-solid fa-cart-shopping"></i>
+          Cart
+        </button>
+      </div>
+    </nav>
+
+    <!-- Category Dropdown -->
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <select class="border bg-white p-3 rounded-lg shadow">
+        <option selected>All Categories</option>
+        <option>Electronics</option>
+        <option>Fashion</option>
+        <option>Accessories</option>
+        <option>Books</option>
+      </select>
+    </div>
+
+    <!-- Product Section -->
+    <section class="max-w-7xl mx-auto px-6 py-6">
+      <h2 class="text-3xl font-bold mb-6">Featured Products</h2>
+
+      <!-- Responsive Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Product 1 -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-2xl overflow-hidden transition"
+        >
+          <div class="overflow-hidden">
+            <img
+              src="../assets/image/headphone.jpg"
+              alt="Headphones"
+              class="w-full h-56 object-cover hover:scale-110 transition duration-300"
+            />
+          </div>
+
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Wireless Headphones</h3>
+
+            <p class="text-blue-600 font-bold mt-2">₹1,999</p>
+
+            <div class="text-yellow-500 mt-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <button
+              class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+              Add To Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-2xl overflow-hidden transition"
+        >
+          <div class="overflow-hidden">
+            <img
+              src="../assets/image/watch.jpg"
+              alt="Watch"
+              class="w-full h-56 object-cover hover:scale-110 transition duration-300"
+            />
+          </div>
+
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Smart Watch</h3>
+
+            <p class="text-blue-600 font-bold mt-2">₹2,499</p>
+
+            <div class="text-yellow-500 mt-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <button
+              class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+              Add To Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-2xl overflow-hidden transition"
+        >
+          <div class="overflow-hidden">
+            <img
+              src="../assets/image/speaker.jpg"
+              alt="Speaker"
+              class="w-full h-56 object-cover hover:scale-110 transition duration-300"
+            />
+          </div>
+
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Bluetooth Speaker</h3>
+
+            <p class="text-blue-600 font-bold mt-2">₹1,299</p>
+
+            <div class="text-yellow-500 mt-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+
+            <button
+              class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+              Add To Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div
+          class="bg-white rounded-xl shadow hover:shadow-2xl overflow-hidden transition"
+        >
+          <div class="overflow-hidden">
+            <img
+              src="../assets/image/mouse.jpg"
+              alt="Mouse"
+              class="w-full h-56 object-cover hover:scale-110 transition duration-300"
+            />
+          </div>
+
+          <div class="p-4">
+            <h3 class="font-bold text-lg">Gaming Mouse</h3>
+
+            <p class="text-blue-600 font-bold mt-2">₹899</p>
+
+            <div class="text-yellow-500 mt-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <button
+              class="mt-4 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
