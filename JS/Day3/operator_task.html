@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator</title>
+  </head>
+  <body>
+    <h2>Operator Assignments</h2>
+    <script>
+      // Task 1
+      let english = 90;
+      let science = 88;
+      let math = 83;
+
+      let totalScore = english + science + math;
+      console.log("Total Score is", totalScore);
+
+      let average = totalScore / 3;
+      console.log("Average score is", average);
+
+      // Task 2 Employee Salary Calculation
+
+      let basicSalary = 25000;
+      let bonus = 2000;
+
+      let grossSalary = basicSalary + bonus;
+      console.log("The gross Salary is", grossSalary);
+
+      // Task 3 Shopping Bill
+
+      let productPrice = 500;
+      let quantity = 40;
+
+      let totalAmount = productPrice * 40;
+      console.log("Total Amount is", totalAmount);
+
+      //   Task 4 Restaurant Bill Split
+
+      let totalBill = 1000;
+      let friendsCount = 4;
+
+      let splitAmount = totalBill / 4;
+      console.log("Split Amount is", splitAmount);
+
+      // Task 5 Even/Odd Checker Logic
+      const num = 25;
+
+      let reminder = num % 2;
+      console.log("Reminder is", reminder);
+
+      // Task 6 Area of Square
+
+      let side = 5;
+
+      let areaSquare = side ** 2;
+      console.log("Area of a square", areaSquare);
+
+      // Task 7 Bank Balance Update
+
+      let balance = 10000;
+      const deposit = 2000;
+
+      balance += deposit;
+      console.log("Bank Balance is", balance);
+
+      // Task 8 ATM Withdrawal
+      let bankBalance = 5000;
+      const Withdraw = 1000;
+
+      bankBalance -= Withdraw;
+      console.log("ATM withdrawal is", bankBalance);
+
+      //Task 9  Product Stock Update
+      let stock = 10;
+      stock *= 5;
+      console.log("Stock Update is", stock);
+
+      //Task 10 Discount Calculation
+
+      let price = 2000;
+      price /= 100;
+      console.log("Discount Calculation", price);
+
+      //Task 11 Login Validation Result
+      const username1 = "admin";
+      const username2 = "admin";
+      let equal = username1 == username2;
+      console.log(equal);
+
+      equal = username1 === username2;
+      console.log(equal);
+
+      //Task 12 Age Verification
+      let age = 18;
+
+      let greater = 20 > age;
+      console.log("Greater", greater);
+      let lesser = 19 < age;
+      console.log("Lesser", lesser);
+      let greaterEqual = 18 >= age;
+      console.log("Greater Equal", greaterEqual);
+      let lesserEqual = 7 <= age;
+      console.log("Lesser Equal", lesserEqual);
+
+      //   Task 13 Product Comparison
+
+      const price1 = 1000;
+
+      const price2 = 1500;
+
+      let comparison = price1 != price2;
+      console.log("Comparison", comparison);
+
+      // Task 14 College Admission Eligibility
+      const mark = 85;
+      const hasCertificate = true;
+
+      let result = mark >= 80 && hasCertificate;
+      console.log("Admission Result", result);
+
+      //   Task 15 Company Access System
+      let isAdmin = false;
+      let isHR = true;
+      let isBlocked = false;
+
+      let accessSystem = isAdmin || isHR || isBlocked;
+      console.log("OR", accessSystem);
+
+      console.log("Reverse Value", !isHR);
+
+      //   Task 16 Student Report Generator
+
+      let studentName = "Sangeetha";
+      let mark1 = 90;
+      let mark2 = 87;
+      let mark3 = 82;
+
+      console.log("Addition:", mark1 + mark2);
+      console.log("Subtraction:", mark1 - mark2);
+      console.log("Multiplication:", mark1 * mark2);
+      console.log("Division:", mark1 / mark2);
+      console.log("Modulus:", mark1 % mark2);
+      console.log("Exponent:", mark1 ** 2);
+
+      let total = mark1;
+
+      total += 10;
+      console.log("+= :", total);
+
+      total -= 5;
+      console.log("-= :", total);
+
+      total *= 2;
+      console.log("*= :", total);
+
+      total /= 5;
+      console.log("/= :", total);
+
+      console.log("== :", studentName == "Sangeetha");
+      console.log("=== :", mark1 === "90");
+      console.log("!= :", mark1 != mark2);
+      console.log("> :", mark1 > mark2);
+      console.log("< :", mark1 < mark2);
+      console.log(">= :", mark1 >= 90);
+      console.log("<= :", mark1 <= 90);
+
+      console.log("&& :", mark1 > 80 && mark2 > 80);
+      console.log("|| :", mark1 > 95 || mark2 > 85);
+      console.log("! :", !(mark3 > 80));
+    </script>
+  </body>
+</html>
