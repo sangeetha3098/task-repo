@@ -1,0 +1,573 @@
+<!doctype html>
+<html>
+  <head>
+    <title>JavaScript Data Types</title>
+  </head>
+  <body>
+    <h1>JavaScript Data Types</h1>
+
+    <h3>String</h3>
+    <p>Stores text values.</p>
+    <p>Example: "Hello"</p>
+
+    <h3>Number</h3>
+    <p>Stores numeric values.</p>
+    <p>Example: 100</p>
+
+    <h3>Boolean</h3>
+    <p>Stores true or false.</p>
+    <p>Example: true</p>
+
+    <h3>Undefined</h3>
+    <p>A variable declared without a value.</p>
+    <p>Example: let age;</p>
+
+    <h3>Null</h3>
+    <p>Represents no value.</p>
+    <p>Example: let user = null;</p>
+
+    <h3>BigInt</h3>
+    <p>Stores very large numbers.</p>
+    <p>Example: 12345678901234567890n</p>
+
+    <h3>Symbol</h3>
+    <p>Creates unique values.</p>
+    <p>Example: Symbol("id")</p>
+
+    <h3>Object</h3>
+    <p>Stores data in key-value pairs.</p>
+    <p>Example: { name: "John" }</p>
+  </body>
+</html>
+<script>
+  let codingHoursPerWeek = 10;
+  console.log(
+    typeof codingHoursPerWeek,
+    "Coding Hours Per Week",
+    codingHoursPerWeek,
+  );
+
+  codingHoursPerWeek = 15;
+  console.log(
+    typeof codingHoursPerWeek,
+    "Reassign the value",
+    codingHoursPerWeek,
+  );
+
+  let favoriteProgrammingLanguage = "JavaScript";
+  console.log(
+    typeof favoriteProgrammingLanguage,
+    "Favorite Programming Language",
+    favoriteProgrammingLanguage,
+  );
+
+  favoriteProgrammingLanguage = "Python";
+  console.log(
+    typeof favoriteProgrammingLanguage,
+    "Reassign the value",
+    favoriteProgrammingLanguage,
+  );
+
+  let websiteVisitorCount = 500;
+  console.log(
+    typeof websiteVisitorCount,
+    "Website Visitor Count",
+    websiteVisitorCount,
+  );
+
+  websiteVisitorCount = 750;
+  console.log(
+    typeof websiteVisitorCount,
+    "Reassign the value",
+    websiteVisitorCount,
+  );
+
+  let keyboardModelName = "Logitech K380";
+  console.log(
+    typeof keyboardModelName,
+    "Keyboard Model Name",
+    keyboardModelName,
+  );
+
+  keyboardModelName = "Redragon K617";
+  console.log(
+    typeof keyboardModelName,
+    "Reassign the value",
+    keyboardModelName,
+  );
+
+  let dailyWaterIntakeLiters = 2;
+  console.log(
+    typeof dailyWaterIntakeLiters,
+    "Daily Water Intake Liters",
+    dailyWaterIntakeLiters,
+  );
+
+  dailyWaterIntakeLiters = 3;
+  console.log(
+    typeof dailyWaterIntakeLiters,
+    "Reassign the value",
+    dailyWaterIntakeLiters,
+  );
+
+  let browserTabCount = 8;
+  console.log(typeof browserTabCount, "Browser Tab Count", browserTabCount);
+
+  browserTabCount = 12;
+  console.log(typeof browserTabCount, "Reassign the value", browserTabCount);
+
+  let onlineOrderReference = "ORD101";
+  console.log(
+    typeof onlineOrderReference,
+    "Online Order Reference",
+    onlineOrderReference,
+  );
+
+  onlineOrderReference = "ORD102";
+  console.log(
+    typeof onlineOrderReference,
+    "Reassign the value",
+    onlineOrderReference,
+  );
+
+  let electricScooterRange = 80;
+  console.log(
+    typeof electricScooterRange,
+    "Electric Scooter Range",
+    electricScooterRange,
+  );
+
+  electricScooterRange = 100;
+  console.log(
+    typeof electricScooterRange,
+    "Reassign the value",
+    electricScooterRange,
+  );
+
+  let podcastEpisodeTitle = "Web Development Basics";
+  console.log(
+    typeof podcastEpisodeTitle,
+    "Podcast Episode Title",
+    podcastEpisodeTitle,
+  );
+
+  podcastEpisodeTitle = "Advanced JavaScript";
+  console.log(
+    typeof podcastEpisodeTitle,
+    "Reassign the value",
+    podcastEpisodeTitle,
+  );
+
+  let cloudStorageCapacity = 100;
+  console.log(
+    typeof cloudStorageCapacity,
+    "Cloud Storage Capacity",
+    cloudStorageCapacity,
+  );
+
+  cloudStorageCapacity = 200;
+  console.log(
+    typeof cloudStorageCapacity,
+    "Reassign the value",
+    cloudStorageCapacity,
+  );
+
+  let smartwatchBatteryLevel = 75;
+  console.log(
+    typeof smartwatchBatteryLevel,
+    "Smartwatch Battery Level",
+    smartwatchBatteryLevel,
+  );
+
+  smartwatchBatteryLevel = 90;
+  console.log(
+    typeof smartwatchBatteryLevel,
+    "Reassign the value",
+    smartwatchBatteryLevel,
+  );
+
+  let groceryShoppingBudget = 3000;
+  console.log(
+    typeof groceryShoppingBudget,
+    "Grocery Shopping Budget",
+    groceryShoppingBudget,
+  );
+
+  groceryShoppingBudget = 4000;
+  console.log(
+    typeof groceryShoppingBudget,
+    "Reassign the value",
+    groceryShoppingBudget,
+  );
+
+  let mountainTripDistance = 120;
+  console.log(
+    typeof mountainTripDistance,
+    "Mountain Trip Distance",
+    mountainTripDistance,
+  );
+
+  mountainTripDistance = 150;
+  console.log(
+    typeof mountainTripDistance,
+    "Reassign the value",
+    mountainTripDistance,
+  );
+
+  let digitalArtworkName = "Sunset Sketch";
+  console.log(
+    typeof digitalArtworkName,
+    "Digital Artwork Name",
+    digitalArtworkName,
+  );
+
+  digitalArtworkName = "Ocean View";
+  console.log(
+    typeof digitalArtworkName,
+    "Reassign the value",
+    digitalArtworkName,
+  );
+
+  let fitnessChallengeDays = 30;
+  console.log(
+    typeof fitnessChallengeDays,
+    "Fitness Challenge Days",
+    fitnessChallengeDays,
+  );
+
+  fitnessChallengeDays = 45;
+  console.log(
+    typeof fitnessChallengeDays,
+    "Reassign the value",
+    fitnessChallengeDays,
+  );
+
+  let newsletterSubscriberCount = 1000;
+  console.log(
+    typeof newsletterSubscriberCount,
+    "Newsletter Subscriber Count",
+    newsletterSubscriberCount,
+  );
+
+  newsletterSubscriberCount = 1200;
+  console.log(
+    typeof newsletterSubscriberCount,
+    "Reassign the value",
+    newsletterSubscriberCount,
+  );
+
+  let gamingSessionDuration = 2;
+  console.log(
+    typeof gamingSessionDuration,
+    "Gaming Session Duration",
+    gamingSessionDuration,
+  );
+
+  gamingSessionDuration = 4;
+  console.log(
+    typeof gamingSessionDuration,
+    "Reassign the value",
+    gamingSessionDuration,
+  );
+
+  let homeLibraryBookCount = 50;
+  console.log(
+    typeof homeLibraryBookCount,
+    "Home Library Book Count",
+    homeLibraryBookCount,
+  );
+
+  homeLibraryBookCount = 65;
+  console.log(
+    typeof homeLibraryBookCount,
+    "Reassign the value",
+    homeLibraryBookCount,
+  );
+
+  let cameraLensFocalLength = 35;
+  console.log(
+    typeof cameraLensFocalLength,
+    "Camera Lens Focal Length",
+    cameraLensFocalLength,
+  );
+
+  cameraLensFocalLength = 50;
+  console.log(
+    typeof cameraLensFocalLength,
+    "Reassign the value",
+    cameraLensFocalLength,
+  );
+
+  let musicPlaylistDuration = 90;
+  console.log(
+    typeof musicPlaylistDuration,
+    "Music Playlist Duration",
+    musicPlaylistDuration,
+  );
+
+  musicPlaylistDuration = 120;
+  console.log(
+    typeof musicPlaylistDuration,
+    "Reassign the value",
+    musicPlaylistDuration,
+  );
+
+  // let Number
+  let studentAge = 21;
+  console.log(typeof studentAge, "Student Age", studentAge);
+
+  let courseDuration = 6;
+  console.log(typeof courseDuration, "Course Duration", courseDuration);
+
+  let courseFee = 15000;
+  console.log(typeof courseFee, "Course Fee", courseFee);
+
+  let batchStrength = 30;
+  console.log(typeof batchStrength, "Batch Strength", batchStrength);
+
+  let trainerExperience = 5;
+  console.log(
+    typeof trainerExperience,
+    "Trainer Experience",
+    trainerExperience,
+  );
+
+  let studentMarks = 88;
+  console.log(typeof studentMarks, "Student Marks", studentMarks);
+
+  let attendancePercentage = 92;
+  console.log(
+    typeof attendancePercentage,
+    "Attendance Percentage",
+    attendancePercentage,
+  );
+
+  let projectScore = 95;
+  console.log(typeof projectScore, "Project Score", projectScore);
+
+  let examResult = 78;
+  console.log(typeof examResult, "Exam Result", examResult);
+
+  let placementPercentage = 85;
+  console.log(
+    typeof placementPercentage,
+    "Placement Percentage",
+    placementPercentage,
+  );
+
+  let monthlySalary = 45000;
+  console.log(typeof monthlySalary, "Monthly Salary", monthlySalary);
+
+  let accountBalance = 25000;
+  console.log(typeof accountBalance, "Account Balance", accountBalance);
+
+  let productPrice = 999;
+  console.log(typeof productPrice, "Product Price", productPrice);
+
+  let itemQuantity = 12;
+  console.log(typeof itemQuantity, "Item Quantity", itemQuantity);
+
+  let orderCount = 150;
+  console.log(typeof orderCount, "Order Count", orderCount);
+
+  let employeeId = 1001;
+  console.log(typeof employeeId, "Employee Id", employeeId);
+
+  let customerRating = 5;
+  console.log(typeof customerRating, "Customer Rating", customerRating);
+
+  let libraryBookCount = 500;
+  console.log(typeof libraryBookCount, "Library Book Count", libraryBookCount);
+
+  let totalSteps = 8000;
+  console.log(typeof totalSteps, "Total Steps", totalSteps);
+
+  let classroomNumber = 101;
+  console.log(typeof classroomNumber, "Classroom Number", classroomNumber);
+
+  // let String
+
+  let studentName = "Sangeetha";
+  console.log(typeof studentName, "Student Name", studentName);
+
+  let courseName = "Frontend Development";
+  console.log(typeof courseName, "Course Name", courseName);
+
+  let noOfStudenet = "Thirty Two";
+  console.log(typeof noOfStudenet, "Number of Student", noOfStudenet);
+
+  let instituteName = "SLA";
+  console.log(typeof instituteName, "Institute Name", instituteName);
+
+  let batchName = "Morning Batch";
+  console.log(typeof batchName, "Batch Name", batchName);
+
+  let cityName = "Puducherry";
+  console.log(typeof cityName, "City Name", cityName);
+
+  let countryName = "India";
+  console.log(typeof countryName, "Country Name", countryName);
+
+  let emailAddress = "student@example.com";
+  console.log(typeof emailAddress, "Email Address", emailAddress);
+
+  let phoneBrand = "Realme";
+  console.log(typeof phoneBrand, "Phone Brand", phoneBrand);
+
+  let laptopModel = "Dell Inspiron";
+  console.log(typeof laptopModel, "Laptop Model", laptopModel);
+
+  let projectTitle = "Portfolio Website";
+  console.log(typeof projectTitle, "Project Title", projectTitle);
+
+  let bookTitle = "JavaScript Basics";
+  console.log(typeof bookTitle, "Book Title", bookTitle);
+
+  let companyName = "Infosys";
+  console.log(typeof companyName, "Company Name", companyName);
+
+  let departmentName = "Human Resources";
+  console.log(typeof departmentName, "Department Name", departmentName);
+
+  let jobRole = "Frontend Developer";
+  console.log(typeof jobRole, "Job Role", jobRole);
+
+  let favoriteColor = "Black";
+  console.log(typeof favoriteColor, "Favorite Color", favoriteColor);
+
+  let movieName = "Interstellar";
+  console.log(typeof movieName, "Movie Name", movieName);
+
+  let foodItem = "Dosa";
+  console.log(typeof foodItem, "Food Item", foodItem);
+
+  let websiteName = "Google";
+  console.log(typeof websiteName, "Website Name", websiteName);
+
+  let collegeName = "Engineering College";
+  console.log(typeof collegeName, "College Name", collegeName);
+
+  // let true
+
+  let isStudentPresent = true;
+  console.log(typeof isStudentPresent, "Is Student Present", isStudentPresent);
+
+  let isCourseCompleted = true;
+  console.log(
+    typeof isCourseCompleted,
+    "Is Course Completed",
+    isCourseCompleted,
+  );
+
+  let hasCertificate = true;
+  console.log(typeof hasCertificate, "Has Certificate", hasCertificate);
+
+  let isFeePaid = true;
+  console.log(typeof isFeePaid, "Is Fee Paid", isFeePaid);
+
+  let isTrainerAvailable = true;
+  console.log(
+    typeof isTrainerAvailable,
+    "Is Trainer Available",
+    isTrainerAvailable,
+  );
+
+  let isExamPassed = true;
+  console.log(typeof isExamPassed, "Is Exam Passed", isExamPassed);
+
+  let isProjectSubmitted = true;
+  console.log(
+    typeof isProjectSubmitted,
+    "Is Project Submitted",
+    isProjectSubmitted,
+  );
+
+  let isPlacementReady = true;
+  console.log(typeof isPlacementReady, "Is Placement Ready", isPlacementReady);
+
+  let isOnlineClass = true;
+  console.log(typeof isOnlineClass, "Is Online Class", isOnlineClass);
+
+  let isAdmissionOpen = true;
+  console.log(typeof isAdmissionOpen, "Is Admission Open", isAdmissionOpen);
+
+  // let False
+
+  let isBatchFull = false;
+  console.log(typeof isBatchFull, "Is Batch Full", isBatchFull);
+
+  let isHolidayToday = false;
+  console.log(typeof isHolidayToday, "Is Holiday Today", isHolidayToday);
+
+  let isInterviewScheduled = false;
+  console.log(
+    typeof isInterviewScheduled,
+    "Is Interview Scheduled",
+    isInterviewScheduled,
+  );
+
+  let isLabAvailable = false;
+  console.log(typeof isLabAvailable, "Is Lab Available", isLabAvailable);
+
+  let isPaymentPending = false;
+  console.log(typeof isPaymentPending, "Is Payment Pending", isPaymentPending);
+
+  let isCourseCancelled = false;
+  console.log(
+    typeof isCourseCancelled,
+    "Is Course Cancelled",
+    isCourseCancelled,
+  );
+
+  let isResultPublished = false;
+  console.log(
+    typeof isResultPublished,
+    "Is Result Published",
+    isResultPublished,
+  );
+
+  let isAssignmentChecked = false;
+  console.log(
+    typeof isAssignmentChecked,
+    "Is Assignment Checked",
+    isAssignmentChecked,
+  );
+
+  let isWeekendClass = false;
+  console.log(typeof isWeekendClass, "Is Weekend Class", isWeekendClass);
+
+  let isPlacementConfirmed = false;
+  console.log(
+    typeof isPlacementConfirmed,
+    "Is Placement Confirmed",
+    isPlacementConfirmed,
+  );
+
+  // let null
+  let middleName = null;
+  console.log(typeof middleName, "Middle Name", middleName);
+
+  let profilePicture = null;
+  console.log(typeof profilePicture, "Profile Picture", profilePicture);
+
+  let graduationDate = null;
+  console.log(typeof graduationDate, "Graduation Date", graduationDate);
+
+  // let undefined
+  let workshopVenue;
+  console.log(typeof workshopVenue, "Workshop Venue", workshopVenue);
+
+  let internshipDuration;
+  console.log(
+    typeof internshipDuratio,
+    "Internship Duration",
+    internshipDuratio,
+  );
+
+  let certificationLevel;
+  console.log(
+    typeof certificationLevel,
+    "Certification Level",
+    certificationLevel,
+  );
+</script>
