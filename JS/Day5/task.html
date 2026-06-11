@@ -1,0 +1,112 @@
+<script>
+  //     Task 1
+
+  function greet() {
+    console.log("Welcome to Javascript");
+  }
+
+  greet();
+
+  // Task 2
+  const showName = () => {
+    let name = "Sangeetha";
+    console.log(name);
+  };
+
+  showName();
+
+  //   Task 3
+
+  function addNumbers() {
+    console.log(10 + 20);
+  }
+
+  addNumbers();
+
+  // Task 4
+  const square = () => {
+    console.log(5 ** 2);
+  };
+  square();
+
+  // Task 5
+
+  function studentInfo() {
+    let name = "Sangeetha";
+    let course = "Frontend";
+    let city = "Pondicherry";
+
+    console.log("Student name", name);
+    console.log("Course name", course);
+    console.log("CIty", city);
+  }
+  studentInfo();
+
+  //   Task 6
+  let fruits = ["Apple", "Orange", "Grapes", "Watermelon", "Banana"];
+  console.log(fruits);
+
+  // Task 7
+  let students = ["Mugesh", "Sangeetha", "Priya", "Suresh", "Natania"];
+  console.log(students[0]);
+
+  // Task 8
+  let arr = [10, 20, 30, 40, 50];
+  console.log(arr[arr.length - 1]);
+
+  // Task 9
+
+  let emptyArray = [];
+
+  emptyArray[0] = "HTML";
+  emptyArray[1] = "CSS";
+  emptyArray[2] = "Javascript";
+  console.log(emptyArray);
+
+  // Task 10
+
+  let colors = ["Black", "white", "Blue", "Green", "Yellow"];
+  for (let i = 0; i < colors.length; i++) {
+    console.log(colors[i]);
+  }
+
+  // Task 11
+  let studentObj = { name: "Sangeetha", age: 28, course: "Frontend" };
+  console.log(studentObj);
+
+  // Task 12
+  let employee = { emp_id: 3556564, emp_name: "David" };
+  console.log(employee.emp_name);
+
+  // Task 13
+
+  let mobile = { brand: "Realme", model: "8", price: 20000 };
+  console.log(mobile["price"]);
+
+  // Task 14
+  let car = { brand: "TATA Motors", model: "Altroz" };
+  console.log(car.brand);
+  console.log(car.model);
+
+  // Task 15
+  let collegeObj = {
+    collegeName: "SMVEC",
+    location: "Pondicherry",
+    student: "Sangeetha",
+  };
+  console.log(collegeObj.collegeName);
+  console.log(collegeObj.location);
+  console.log(collegeObj.student);
+
+  // combine task
+
+  function showStudent() {
+    let nameList = ["Sudhan", "Rahul", "Kumar"];
+    let courseDetail = { course: "MERN", duration: "6 Months" };
+    console.log("Array", nameList);
+    console.log("Object", courseDetail);
+    console.log(nameList[1])
+    console.log(courseDetail["duration"])
+  }
+  showStudent();
+</script>
