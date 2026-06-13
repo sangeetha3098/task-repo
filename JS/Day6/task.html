@@ -1,0 +1,209 @@
+<script>
+  //     Task 1
+  let heroes = ["Vijay", "Ajith", "Suriya", "Sk"];
+
+  for (let i = 0; i <= heroes.length - 1; i++) {
+    console.log(heroes[i]);
+  }
+
+  //   Task 2
+
+  let collections = [200, 500, 800, 400, 600];
+
+  let heighest = collections[0];
+
+  for (let i = 1; i < collections.length; i++) {
+    if (collections[i] > heighest) {
+      heighest = collections[i];
+    }
+  }
+  console.log("heighest value", heighest);
+
+  //   Task 3
+
+  let lowestCollection = [200, 500, 800, 400, 600];
+
+  let lowest = lowestCollection[0];
+
+  for (let i = 1; i < lowestCollection.length; i++) {
+    if (lowestCollection[i] < lowest) {
+      lowest = lowestCollection[i];
+    }
+  }
+
+  console.log("Lowest value", lowest);
+
+  //   Task 4
+
+  let collection = [200, 500, 800, 400, 600];
+
+  let total = 0;
+
+  for (let i = 0; i < collection.length; i++) {
+    total += collection[i];
+  }
+
+  console.log("Total", total);
+
+  //   Task 5
+  let averageCol = [200, 500, 800, 400, 600];
+
+  let average = 0;
+  for (let i = 0; i < averageCol.length; i++) {
+    average += averageCol[i] / averageCol.length;
+  }
+
+  console.log(average);
+
+  // Task 6
+
+  let names = ["Vijay", "Ajith", "Suriya", "SK"];
+
+  let reverse = [];
+
+  let index = 0;
+
+  for (let i = names.length - 1; i >= 0; i--) {
+    reverse[index] = names[i];
+    index++;
+  }
+
+  console.log("The reversed array", reverse);
+
+  //   Task 7
+  let fruits = ["Apple", "Mango", "Orange", "Banana"];
+
+  for (let i = 0; i < fruits.length; i++) {
+    if (fruits[i] === "Mango") {
+      console.log("Fruit Found");
+    }
+  }
+
+  //   Task 8
+
+  let fruitCount = ["Apple", "Mango", "Orange", "Banana"];
+
+  let count = 0;
+
+  for (let i = 0; i < fruitCount.length; i++) {
+    count += 1;
+  }
+
+  console.log(count);
+
+  //   Task 9
+
+  let longest = ["Vijay", "Ajith", "Sivakarthikeyan", "SK"];
+
+  let long = longest[0];
+
+  for (let i = 1; i < longest.length; i++) {
+    if (longest[i].length > long.length) {
+      long = longest[i];
+    }
+  }
+  console.log("Longest name", long);
+
+  // Task 10 - Palindrome Check
+
+  let movie = "LEVEL";
+  let reverseName = "";
+
+  for (let i = movie.length - 1; i >= 0; i--) {
+    reverseName += movie[i];
+  }
+  if (movie === reverseName) {
+    console.log("It is Palindrome");
+  } else {
+    console.log("Not a palindrome");
+  }
+
+  //   Task 11 - Reverse String
+
+  let hero = "VIJAY";
+  let reversName = " ";
+
+  for (let i = hero.length - 1; i >= 0; i--) {
+    reversName += hero[i];
+  }
+
+  console.log(reversName);
+
+  //   Task 12 Fibonacci
+
+  let first = 0;
+  let second = 1;
+
+  for (let i = 0; i < 10; i++) {
+    console.log(first);
+
+    let next = first + second;
+    first = second;
+    second = next;
+  }
+
+  // Task 13 - Count Vowels
+  let vowel = "Suriya";
+  let vowelCount = 0;
+
+  for (let i = 0; i <= vowel.length; i++) {
+    let ch = vowel[i];
+    if (ch === "a" || ch === "e" || ch === "i" || ch === "o" || ch === "u") {
+      vowelCount += 1;
+    }
+  }
+  console.log("vowel count is", vowelCount);
+
+  // Task 14 - Count Character Frequency
+
+  let heroName = "VIJAY";
+
+  let heroCount = 0;
+  for (let i = 0; i < heroName.length; i++) {
+    if (heroName[i] === "A") {
+      heroCount += 1;
+    }
+  }
+  console.log("Character count", heroCount);
+
+  //   Task 15
+  let wordOne = "LISTEN";
+  let wordTwo = "Silent";
+  wordTwo = wordTwo.toUpperCase();
+  console.log(wordTwo);
+
+  let sortedWordOne = wordOne.split("").sort().join("");
+  let sortedWordTwo = wordTwo.split("").sort().join("");
+  if (sortedWordOne === sortedWordTwo) {
+    console.log("Anagram");
+  } else {
+    console.log("Not Anagram");
+  }
+
+  //  Task 16 Armstrong Number
+
+  let num = 153;
+  let add = 0;
+  let splitValue = num.toString().split("");
+  for (let i = 0; i < splitValue.length; i++) {
+    add += splitValue[i] ** 3;
+  }
+  console.log("Add value", add);
+
+  //Task 17 Prime Number
+
+  const numb = 17;
+  let isPrime = true;
+
+  for (let i = 2; i < numb; i++) {
+    if (numb % i === 0) {
+      isPrime = false;
+    }
+  }
+  if (isPrime) {
+    console.log("It is a prime number");
+  } else {
+    console.log("Not a Prime Number");
+  }
+
+</script>

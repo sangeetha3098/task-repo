@@ -1,0 +1,139 @@
+<script>
+  // 1. Find Missing Number
+  function findMissingNumber(arr) {
+    for (let i = 0; i < arr.length - 1; i++) {
+      if (arr[i + 1] !== arr[i] + 1) {
+        console.log("Missing Number:", arr[i] + 1);
+      }
+    }
+  }
+
+  // 2. Move All Zeros To End
+  function moveZerosToEnd(arr) {
+    let result = [];
+    let index = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] !== 0) {
+        result[index] = arr[i];
+        index++;
+      }
+    }
+
+    for (let i = index; i < arr.length; i++) {
+      result[i] = 0;
+    }
+
+    console.log("Move Zeros:", result);
+  }
+
+  // 3. Count Occurrences
+  function countOccurrences(arr) {
+    let count = {};
+
+    for (let i = 0; i < arr.length; i++) {
+      if (count[arr[i]]) {
+        count[arr[i]]++;
+      } else {
+        count[arr[i]] = 1;
+      }
+    }
+
+    console.log("Occurrences:", count);
+  }
+
+  // 4. Find Most Frequent Element
+  function mostFrequentElement(arr) {
+    let counts = {};
+    let max = 0;
+    let result;
+
+    for (let i = 0; i < arr.length; i++) {
+      counts[arr[i]] = (counts[arr[i]] || 0) + 1;
+
+      if (counts[arr[i]] > max) {
+        max = counts[arr[i]];
+        result = arr[i];
+      }
+    }
+
+    console.log("Most Frequent:", result);
+  }
+
+  // 5. Separate Even & Odd
+  function separateEvenOdd(arr) {
+    let even = [];
+    let odd = [];
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] % 2 === 0) {
+        even.push(arr[i]);
+      } else {
+        odd.push(arr[i]);
+      }
+    }
+
+    console.log("Even:", even);
+    console.log("Odd:", odd);
+  }
+
+  // 6. Second Longest Name
+  function secondLongestName(arr) {
+    let longest = "";
+    let secondLongest = "";
+
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i].length > longest.length) {
+        secondLongest = longest;
+        longest = arr[i];
+      } else if (arr[i].length > secondLongest.length) {
+        secondLongest = arr[i];
+      }
+    }
+
+    console.log("Second Longest:", secondLongest);
+  }
+
+  // 7. Rotate Array Left Once
+  function rotateLeft(arr) {
+    let first = arr[0];
+
+    for (let i = 0; i < arr.length - 1; i++) {
+      arr[i] = arr[i + 1];
+    }
+
+    arr[arr.length - 1] = first;
+
+    console.log("Rotate Left:", arr);
+  }
+
+  // 8. Rotate Array Right Once
+  function rotateRight(arr) {
+    let last = arr[arr.length - 1];
+
+    for (let i = arr.length - 1; i > 0; i--) {
+      arr[i] = arr[i - 1];
+    }
+
+    arr[0] = last;
+
+    console.log("Rotate Right:", arr);
+  }
+
+  // Function Calls
+  findMissingNumber([1, 2, 3, 5]);
+
+  moveZerosToEnd([1, 0, 2, 0, 3, 4, 0]);
+
+  countOccurrences(["Vijay", "Ajith", "Vijay", "SK"]);
+
+  mostFrequentElement([1, 2, 2, 3, 2, 4, 1]);
+
+  separateEvenOdd([1, 2, 3, 4, 5, 6]);
+
+  secondLongestName(["Vijay", "Ajith", "Sivakarthikeyan", "Dhanush"]);
+
+  rotateLeft(["Vijay", "Ajith", "Suriya", "SK"]);
+
+  rotateRight(["Vijay", "Ajith", "Suriya", "SK"]);
+</script>
