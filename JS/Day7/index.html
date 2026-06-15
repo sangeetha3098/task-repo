@@ -1,0 +1,62 @@
+<script>
+  let userName = "Sangeetha";
+  let age = 27;
+
+  console.log(`The age of ${userName} is ${age}`);
+
+  let objectArray = {
+    id: [1, 2, 3],
+    students: ["Sangeetha", "Manasa", "Riya"],
+  };
+
+  const users = [
+    {
+      id: 1,
+      name: "Sangeetha",
+      age: 28,
+    },
+    {
+      id: 2,
+      name: "Manasa",
+      age: 27,
+    },
+    {
+      id: 3,
+      name: "Riya",
+      age: 28,
+    },
+  ];
+
+  let student = {
+    id: 1,
+    name: "Sangeetha",
+    age: 25,
+    address: {
+      city: "Puducherry",
+      state: "Tamil Nadu",
+      pincode: 605001,
+    },
+  };
+
+  function studentDetails(data) {
+    for (let i = 0; i < data.students.length; i++) {
+      console.log(data.students[i]);
+    }
+  }
+
+  studentDetails(objectArray);
+
+  const deleteData = function (data) {
+    console.log(data[0]);
+
+    console.log("Anonymous Function");
+  };
+
+  deleteData(users);
+
+  const submitData = (data) => {
+    console.log(data);
+  };
+
+  submitData("Arrow Function");
+</script>

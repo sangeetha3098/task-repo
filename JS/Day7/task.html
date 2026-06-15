@@ -1,0 +1,116 @@
+<script>
+  //     Task 1 – Push & Pop (Movie List)
+
+  // Display the final array
+  let movieNames = ["GOAT", "Leo", "Master"];
+  movieNames.push("Ghilli");
+  console.log("push", movieNames);
+
+  movieNames.pop();
+  console.log("pop", movieNames);
+
+  // Task 2 – Shift & Unshift (Hero List)
+
+  let heroes = ["Ajith", "Suriya", "SK"];
+  heroes.unshift("Vijay");
+  console.log("Unshift", heroes);
+  heroes.shift();
+  console.log("Shift", heroes);
+
+  // Task 3 – Fruits Management
+
+  let fruits = ["Apple", "Mango", "Orange"];
+  fruits.push("Banana", "Grapes");
+  console.log("Push", fruits);
+  fruits.pop();
+  console.log("Pop", fruits);
+  fruits.unshift("Pineapple");
+  console.log("Unshift", fruits);
+  fruits.shift();
+  console.log("Shift", fruits);
+
+  // Task 4 – Student Object
+
+  const student = {
+    name: "Sudhan",
+    course: "MERN",
+    city: "Chennai",
+  };
+
+  console.log(student.name);
+  console.log(student.course);
+  console.log(student.city);
+  console.log(student["name"]);
+  console.log(student["course"]);
+  console.log(student["city"]);
+
+  //   Task 5 – Mobile Store (Array of Objects)
+
+  const mobiles = [
+    {
+      brand: "Samsung",
+      price: 20000,
+    },
+
+    {
+      brand: "iPhone",
+      price: 80000,
+    },
+
+    {
+      brand: "OnePlus",
+      price: 35000,
+    },
+  ];
+
+  const mobileDetails = (a) => {
+    for (let m = 0; m < a.length; m++) {
+      console.log(`${a[m].brand} - ${a[m].price}`);
+    }
+  };
+
+  mobileDetails(mobiles);
+
+  //   Task 6 – Movie Collection Report (Array of Objects)
+
+  const movieCollection = [
+    {
+      movie: "GOAT",
+      collection: 800,
+    },
+
+    {
+      movie: "Leo",
+      collection: 600,
+    },
+
+    {
+      movie: "Master",
+      collection: 500,
+    },
+  ];
+
+
+  let total = 0;
+  let highest = movieCollection[0].collection;
+  let heighestMovieName = movieCollection[0].movie;
+  const movieDetails = (mov) => {
+    for (let c = 0; c < mov.length; c++) {
+      total += mov[c].collection;
+
+      if (mov[c].collection > highest) {
+        highest = mov[c].collection;
+       heighestMovieName = mov[c].movie;
+      
+        
+      }
+    }
+   
+    
+    console.log("Total collection", total);
+    console.log("Highest collection", highest);
+    console.log(`${heighestMovieName} is the highest collection as ${highest}`);
+  };
+
+  movieDetails(movieCollection);
+</script>
