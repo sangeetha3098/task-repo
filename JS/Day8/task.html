@@ -1,0 +1,127 @@
+<script>
+  //     Task 1 – push() Method
+
+  const course = ["HTML", "CSS", "JavaScript"];
+  course.push("React", "Node.js");
+  console.log(course);
+
+  // Task 2 – pop() Method
+  const arr = ["HTML", "CSS", "JavaScript", "React"];
+  arr.pop();
+  console.log(arr);
+
+  // Task 3 – shift() Method
+
+  const fruits = ["Apple", "Mango", "Orange", "Banana"];
+  fruits.shift();
+  console.log(fruits);
+
+  // Task 4 – unshift() Method
+
+  const actors = ["Ajith", "Suriya", "SK"];
+  actors.unshift("Vijay", "Dhanush");
+  console.log(actors);
+
+  // Task 5 – splice() Method
+  const arrSplice = ["HTML", "CSS", "Bootstrap", "React"];
+  arrSplice.splice(2, 1, "Javascript");
+  console.log(arrSplice);
+
+  // Task 6 – slice() Method
+
+  const arrCourse = ["HTML", "CSS", "JavaScript", "React", "Node"];
+  const copy = arrCourse.slice(2, 4);
+  console.log(copy);
+
+  // Task 7 – Object Looping
+
+  let student = {
+    name: "Sudhan",
+
+    course: "MERN",
+
+    city: "Chennai",
+
+    age: 25,
+  };
+
+  const students = (a) => {
+    for (const data in a) {
+      console.log(data + " : " + a[data]);
+    }
+  };
+  students(student);
+
+  //   Task 8 – Array of Objects Looping
+
+  let movies = [
+    {
+      name: "Vijay",
+      movie: "GOAT",
+    },
+
+    {
+      name: "Ajith",
+      movie: "Vidaamuyarchi",
+    },
+
+    {
+      name: "Suriya",
+      movie: "Kanguva",
+    },
+  ];
+
+  const heroMovies = (mov) => {
+    for (let a = 0; a < mov.length; a++) {
+      console.log(mov[a].name + " - " + mov[a].movie);
+    }
+  };
+  heroMovies(movies);
+
+  //   Task 9 – join() Method
+  let heroList = ["Vijay", "Ajith", "Suriya", "SK"];
+  let convert = heroList.join(" | ");
+  console.log(convert);
+
+  // Task 10 – includes() Method
+
+  let courseArray = ["HTML", "CSS", "JavaScript", "React", "CSS"];
+  let includ = courseArray.includes("React");
+  if (includ) {
+    console.log("Course Found");
+  } else {
+    console.log("Course not found");
+  }
+
+  // concat()
+  let arr1 = [1, 2, 3];
+  let arr2 = [4, 5, 6];
+
+  console.log(arr1.concat(arr2));
+
+  // sort()
+
+  console.log(courseArray.sort());
+
+  // indexOf()
+  let indexOf = courseArray.indexOf("React");
+  console.log(indexOf);
+
+  // lastIndexOf()
+  let lastIndexOf = courseArray.lastIndexOf("CSS");
+  console.log(lastIndexOf);
+
+  // reverse()
+  let rev = courseArray.reverse();
+  console.log(rev);
+
+  // toString()
+  let num = 10;
+
+  let str = num.toString();
+  console.log(str);
+  console.log(typeof str);
+
+  // length()
+  console.log("Length of the array ", courseArray.length);
+</script>
