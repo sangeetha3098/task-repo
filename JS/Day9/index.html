@@ -1,0 +1,133 @@
+<script>
+  //    Task 1
+
+  const heroName = () => {
+    let hero = "Vijay";
+    console.log(hero);
+    if (hero) {
+      console.log("Hero name is ", hero);
+    }
+
+    for (let a = 0; a < hero.length; a++) {
+      console.log(hero[0]);
+    }
+  };
+  heroName();
+
+  //   Task 2
+
+  //   const movie = () => {
+  //     let collection = 800;
+  //   };
+  //   console.log(collection);
+
+  //   movie();
+
+  // Task 3
+
+  //   if (true) {
+  //     var actor1 = "Ajith";
+
+  //     let actor2 = "Vijay";
+  //   }
+  //   console.log(actor1);
+  //   console.log(actor2);
+
+  // Named Function Tasks
+  // Task 4
+
+  const movie = () => {
+    console.log("GOAT Movie Released");
+  };
+  const showMovie = (a) => {
+    a();
+  };
+  showMovie(movie);
+
+  //   Task 5
+
+  const add = (a, b) => {
+    let c = a + b;
+    console.log("The sum is", c);
+  };
+
+  add(20, 30);
+
+  // Anonymous Function Tasks
+  // Task 6
+
+  const newBooking = (call) => {
+    call();
+  };
+
+  newBooking(() => {
+    console.log("Booking Confirmed");
+  });
+
+  // Task 7
+
+  const movTime = (time) => {
+    time();
+  };
+
+  movTime(() => {
+    setTimeout(() => {
+      console.log("Movie Started");
+    }, 2000);
+  });
+
+  //   Callback Function Tasks
+  // Task 8
+
+  const status = () => {
+    console.log("Order Delivered");
+  };
+
+  const processOrder = (s) => {
+    console.log("Order Received");
+    s();
+  };
+
+  processOrder(status);
+
+  //   Closure Tasks
+  // Task 9
+
+  const counter = () => {
+    let count = 0;
+    return () => {
+      count++;
+      console.log(count);
+    };
+  };
+
+  const incr = counter();
+  incr();
+  incr();
+  incr();
+
+  //   Task 10
+  // Create a banking closure.
+
+  const bankClosure = (initialBalance) => {
+    let initBal = initialBalance;
+
+    return {
+      deposit: (amount) => {
+        initBal += amount;
+      },
+      withdraw: (amount) => {
+        initBal -= amount;
+      },
+      checkBalance: () => {
+        console.log(`Current Balance: ${initBal}`);
+      },
+    };
+  };
+
+  const myAccount = bankClosure(5000);
+
+  myAccount.deposit(1000);
+  myAccount.withdraw(500);
+  myAccount.checkBalance();
+</script>
