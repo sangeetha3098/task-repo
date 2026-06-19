@@ -1,0 +1,176 @@
+<script>
+  //     Task 1 - let
+
+  let myName = "Sangeetha";
+  myName = "Sangi";
+  console.log("Name is", myName);
+  // Task 2 - let Scope
+
+  if (true) {
+    let a = 10;
+    console.log("Inside:", a);
+  }
+
+  // console.log("Outside:", a);
+
+  // Task 3 - const
+  const courseName = "React";
+  // courseName = "react"
+  // console.log(courseName);
+
+  // Task 4 - Arrow Function
+
+  const greet = (a) => {
+    console.log(a);
+  };
+
+  greet("Welcome to Javascript");
+
+  // Task 5 - Arrow Function With Parameters
+
+  const showHero = (heroName) => {
+    console.log(`Hero Name : ${heroName}`);
+  };
+  showHero("Vijay");
+
+  // Task 6 - Arrow Function Addition
+
+  const addition = (a, b) => {
+    let c = a + b;
+    console.log(c);
+  };
+  addition(10, 20);
+
+  // Task 7 - Template Literals
+  let hero = "Vijay";
+  console.log(`My favourite hero is ${hero}`);
+
+  // Task 8 - Template Literals Multiple Values
+  let name1 = "Sangi";
+  let course1 = "React";
+  let city = "Pondicherry";
+  console.log(`My name is ${name1} i am pursuing ${course1} course in ${city}`);
+
+  // Task 9 - Array Destructuring
+
+  let heroes = ["Vijay", "Ajith", "Suriya"];
+  let [hero1, hero2, hero3] = heroes;
+  console.log(hero1, hero2);
+
+  // Task 10 - Object Destructuring
+
+  let detail = {
+    name: "Sudhan",
+    course: "MERN",
+    city: "Chennai",
+  };
+
+  let { name, course } = detail;
+  console.log(`Name is ${name} and the course is ${course}`);
+
+  //   Task 11 - Spread Operator (Array Copy)
+  let b = ["HTML", "CSS", "JavaScript"];
+  let newArr = [...b, "React"];
+  console.log(newArr);
+
+  // Task 12 - Spread Operator (Merge Arrays)
+
+  let c = ["Vijay", "Ajith"];
+  let d = ["Suriya", "SK"];
+  let mergeArr = [...c, ...d];
+  console.log(mergeArr);
+
+  // Task 13 - Spread Operator (Object Copy)
+
+  let trainee = {
+    name: "Sudhan",
+    city: "Chennai",
+  };
+
+  let newTrainee = { ...trainee, course: "MERN" };
+  console.log(newTrainee);
+
+  //   Task 14 - Rest Parameter
+
+  const total = (...numbers) => {
+    console.log(numbers);
+  };
+  total(10, 20, 30, 40, 50, 60);
+
+  //   Task 15 - Rest + Sum
+
+  const sum = (...numbers) => {
+    let add = 0;
+    for (let a = 0; a < numbers.length; a++) {
+      add += numbers[a];
+    }
+    console.log(add);
+  };
+  sum(10, 20, 30, 40, 50);
+
+  //   Task 1 - Student Report Generator
+
+  let obj = {
+    names: "Sudhan",
+    courses: "MERN",
+    citys: "Chennai",
+  };
+
+  let { names, courses, citys } = obj;
+  console.log(`Student name : ${names}`);
+  console.log(`Course : ${names}`);
+  console.log(`City : ${names}`);
+
+  // Task 2 - Hero Array Merge
+
+  let heroes1 = ["Vijay", "Ajith"];
+
+  let heroes2 = ["Suriya", "SK"];
+
+  let mergeHeros = [...heroes1, ...heroes2];
+
+  const arrowHero = (hero) => {
+    for (let h = 0; h < hero.length; h++) {
+      console.log(hero[h]);
+    }
+  };
+
+  arrowHero(mergeHeros);
+
+  //   Task 3 - Movie Collection Calculator
+
+  const calculateTotal = (...collections) => {
+    let tot = 0;
+    for (let a = 0; a < collections.length; a++) {
+      tot += collections[a];
+    }
+    console.log(`Total collection : ${tot}`);
+  };
+  calculateTotal(500, 800, 300, 700);
+
+  //   Task 4 - Employee Object Update
+
+  const employee = {
+    nam: "Rahul",
+
+    department: "IT",
+
+    salary: 30000,
+  };
+
+  let newObj = { ...employee, experience: 2 };
+  console.log("New Object", newObj);
+  let { nam, department, salary, experience } = newObj;
+  console.log(nam, department, salary, experience);
+
+  //   Task 5 - Online Course Enrollment System
+
+  const enrollStudent = (studentName, ...courses) => {
+    console.log(`Student : ${studentName}`);
+    console.log("Course");
+    for (let course of courses) {
+      console.log(course);
+    }
+  };
+  enrollStudent("Sudhan", "React", "Node", "MongoDB");
+</script>
