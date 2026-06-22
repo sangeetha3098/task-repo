@@ -1,0 +1,443 @@
+<script>
+  //   Task 1
+  // const heroes = [
+
+  //    "Vijay",
+
+  //    "Ajith",
+
+  //    "Suriya"
+
+  // ];
+  // Convert all names to uppercase using map().
+
+  const heroes = ["Vijay", "Ajith", "Suriya"];
+
+  const heroUpper = heroes.map((e, i) => e.toUpperCase());
+  console.log(heroUpper);
+
+  // Task 2
+  // const collections = [
+
+  //    100,
+
+  //    200,
+
+  //    300,
+
+  //    400
+  // ];
+  // Multiply every collection by 10.
+
+  // Output
+  // [
+  //    1000,
+  //    2000,
+  //    3000,
+  //    4000
+  // ]
+
+  const collections = [
+    100,
+
+    200,
+
+    300,
+
+    400,
+  ];
+
+  const coll = collections.map((e, i) => e * 10);
+  console.log(coll);
+
+  // Task 3
+  // const movies = [
+
+  //    "GOAT",
+
+  //    "Leo",
+
+  //    "Master"
+  // ];
+  // Add:
+
+  // Movie :
+  // before every movie name.
+
+  // Output
+  // [
+  //  "Movie : GOAT",
+  //  "Movie : Leo",
+  //  "Movie : Master"
+  // ]
+
+  const movies = ["GOAT", "Leo", "Master"];
+
+  const result = movies.map((movie) => `Movie : ${movie}`);
+
+  console.log(result);
+
+  // Task 4
+  // const collections = [
+
+  //    100,
+
+  //    500,
+
+  //    800,
+
+  //    200,
+
+  //    900
+  // ];
+  // Display collections greater than:
+
+  // 500
+
+  const collection = [
+    100,
+
+    500,
+
+    800,
+
+    200,
+
+    900,
+  ];
+
+  const filterColl = collection.filter((collections) => collections > 500);
+  console.log(filterColl);
+
+  // Task 5
+  // const marks = [
+
+  //    35,
+
+  //    80,
+
+  //    20,
+
+  //    90,
+
+  //    45
+  // ];
+  // Display only passed students.
+
+  // Condition:
+
+  // mark >= 35
+
+  const marks = [
+    35,
+
+    80,
+
+    20,
+
+    90,
+
+    45,
+  ];
+
+  const pass = marks.filter((m)=>{
+    return m >=35
+  })
+  console.log(pass);
+  
+
+//   Task 6
+// const heroes = [
+
+//    "Vijay",
+
+//    "Ajith",
+
+//    "SK",
+
+//    "Suriya"
+// ];
+// Display names having more than 4 characters.
+
+const hero = [
+
+   "Vijay",
+
+   "Ajith",
+
+   "SK",
+
+   "Suriya"
+];
+
+const filterChar = hero.filter((char)=> char.length > 4)
+console.log(filterChar);
+
+// Task 7
+// const heroes = [
+
+//    "Vijay",
+
+//    "Ajith",
+
+//    "Suriya"
+// ];
+// Find:
+
+// "Ajith"
+// using find().
+
+const heroes1 = [
+
+   "Vijay",
+
+   "Ajith",
+
+   "Suriya"
+];
+
+const findHero = heroes1.find((hero)=> hero == "Ajith")
+console.log(findHero);
+
+// Task 8
+// const collections = [
+
+//    100,
+
+//    500,
+
+//    800,
+
+//    200
+// ];
+// Find first collection greater than:
+
+// 400
+
+const collect = [
+
+   100,
+
+   500,
+
+   800,
+
+   200
+];
+
+const greater = collect.find((collec)=> collec > 400 )
+console.log(greater);
+
+// Task 9
+//
+
+// Find index of:
+
+// "Suriya"
+
+ const hero1 = [
+
+   "Vijay",
+
+   "Ajith",
+
+   "Suriya"
+];
+
+const index = hero1.indexOf("Suriya")
+console.log(index);
+
+// Task 10
+// const movies = [
+
+//    "GOAT",
+
+//    "Leo",
+
+//    "Master"
+// ];
+// Find index of:
+
+// "Leo"
+ const movie = [
+
+   "GOAT",
+
+   "Leo",
+
+   "Master"
+];
+
+const movIndex = movie.indexOf("Leo")
+console.log(movIndex);
+
+// Task 11
+const marks1= [
+
+   35,
+
+   80,
+
+   20,
+
+   90
+];
+// Check if at least one student failed.
+
+// Condition:
+
+// mark < 35
+
+const someMark = marks1.some ((mark)=> mark < 35)
+console.log(someMark);
+
+
+// Task 12
+const collection2 = [
+
+   100,
+
+   200,
+
+   900
+];
+// Check if at least one movie crossed:
+
+// 800
+
+const movieCross = collection2.some((cross)=>cross > 800)
+console.log(movieCross);
+
+// Task 13
+const marks3 = [
+
+   50,
+
+   70,
+
+   90,
+
+   40
+];
+// Check if all students passed.
+
+// Condition:
+
+// mark >= 35
+
+const allPass = marks3.every((mark)=> mark >= 35)
+console.log(allPass);
+
+// Task 14
+const ages = [
+
+   20,
+
+   25,
+
+   30,
+
+   35
+];
+// Check if all ages are above:
+
+// 18
+const ageCheck = ages.every(age => age >18)
+console.log(ageCheck);
+
+// Task 15
+const col2 = [
+
+   100,
+
+   200,
+
+   300,
+
+   400
+];
+// Find total collection using reduce().
+
+
+const total = col2.reduce((a,b)=>{
+    return a+b
+},0)
+console.log(total);
+
+// Task 18
+const students = [
+
+   {
+      id:1,
+      name:"Sudhan"
+   },
+
+   {
+      id:2,
+      name:"Rahul"
+   }
+];
+// Using map()
+
+// Display only student names.
+
+const student = students.map(student => student.name)
+console.log(student);
+
+// Task 19
+const student1 = [
+
+   {
+      id:1,
+      age:20
+   },
+
+   {
+      id:2,
+      age:30
+   },
+
+   {
+      id:3,
+      age:18
+   }
+];
+// Using filter()
+
+// Display students whose age is above:
+
+// 20
+const ageFilter = student1.filter(student => student.age > 20)
+console.log(ageFilter);
+
+// Task 20
+const students2 = [
+
+   {
+      id:1,
+      name:"Sudhan"
+   },
+
+   {
+      id:2,
+      name:"Rahul"
+   }
+];
+// Using find()
+
+// Find student with:
+
+// id = 2
+
+const studentId = students2.find(i=>i.id == 2)
+console.log(studentId);
+
+// Using filter()
+
+// Display only even numbers.
+
+const num = [10,15,20,25,30]
+const even = num.filter( number => number % 2 == 0)
+console.log(even);
+
+</script>

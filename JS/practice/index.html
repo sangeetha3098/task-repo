@@ -1,0 +1,100 @@
+<script>
+  let city = "Chennai";
+
+  function showCity() {
+    console.log(city);
+  }
+
+  showCity();
+
+  let course = "MERN";
+
+  function outer() {
+    let trainer = "Sangeetha";
+
+    function inner() {
+      console.log(trainer);
+      console.log(course);
+    }
+
+    inner();
+  }
+
+  outer();
+
+  // Question 1
+
+  // Create a function called counter() that:
+
+  // Starts with count = 0
+  // Returns another function
+  // Every time the returned function is called, increase count by 1 and print it
+
+  // Expected Output
+
+  // let countValue = counter();
+
+  // countValue(); // 1
+  // countValue(); // 2
+  // countValue(); // 3
+
+  const counter = () => {
+    let count = 0;
+    const incre = () => {
+      count++;
+      console.log(count);
+    };
+    return incre;
+  };
+
+  let countValue = counter();
+  countValue();
+  countValue();
+  countValue();
+
+  // Create:
+
+  // function greeting(name) {
+  // }
+
+  // It should return another function that prints:
+
+  // Hello Sangeetha
+  const greeting = (name) => {
+    let na = name;
+
+    const sent = () => {
+      console.log(`Hello ${na}`);
+    };
+    return sent;
+  };
+
+  let prnt = greeting("Sangeetha");
+  prnt();
+
+  //   Question 1
+
+  // Create a named callback function:
+
+  // function displayMessage() {
+  //   console.log("Learning JavaScript");
+  // }
+
+  // Pass it to setTimeout() so the message appears after 2 seconds
+
+  const displayMessage = () => {
+    console.log("Learning JavaScript");
+  };
+
+  setTimeout(() => {
+    displayMessage();
+  }, 2000);
+
+  let numbers = [10, 20, 30, 40];
+
+  function printNumber(num) {
+    console.log(num);
+  }
+
+  numbers.forEach(printNumber);
+</script>
