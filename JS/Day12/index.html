@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">Welcome</h1>
+    <p class="course">React</p>
+    <input id="username" type="text" />
+
+    <img id="hero" src="old.jpg" />
+
+    <a id="website" href="#"> Visit </a>
+
+    <script>
+      const title = document.getElementById("title");
+      title.innerText = "Welcome to JavaScript DOM";
+      const course = document.querySelector("p");
+      course.innerText = "MERN Stack";
+      const username = document.getElementById("username");
+      username.value = "Sudhan";
+      const hero = document.querySelector("#hero");
+      hero.src = "new.jpg";
+
+      console.log(hero.src);
+      const website = document.getElementById("website");
+      website.href = "https://google.com";
+    </script>
+  </body>
+</html>
