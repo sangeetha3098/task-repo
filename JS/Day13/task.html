@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" value="" id="username" placeholder="Enter your name" />
+      <button onclick="showName()">Display Name</button>
+      <h2 id="result"></h2>
+    </div>
+    <div>
+      <p id="para">This is a paragraph. Click the button to hide it.</p>
+
+      <button onclick="hideParagraph()">Hide Paragraph</button>
+    </div>
+
+    <div>
+      <p id="para-show">This is a paragraph. Click the button to show.</p>
+
+      <button onclick="showParagraph()">Show</button>
+    </div>
+
+    <div>
+      <p id="toggle">Toggle</p>
+
+      <button onclick="toggleParagraph()">Toggle</button>
+    </div>
+
+    <div>
+      <input type="text" id="user" placeholder="Enter username" />
+      <button onclick="checkUser()">Login</button>
+
+      <p id="res"></p>
+    </div>
+
+    <div>
+      <input type="password" id="password" placeholder="Enter password" />
+      <button onclick="checkPassword()">Check Password</button>
+
+      <p id="result1"></p>
+    </div>
+
+    <div>
+      <input type="text" id="firstName" placeholder="Enter First Name" />
+      <input type="text" id="lastName" placeholder="Enter Last Name" />
+
+      <button onclick="showFullName()">Display Full Name</button>
+
+      <h2 id="result2"></h2>
+    </div>
+
+    <script>
+      const showName = () => {
+        const userName = document.getElementById("username").value;
+        document.getElementById("result").textContent = userName;
+      };
+
+      function hideParagraph() {
+        document.getElementById("para").style.display = "none";
+      }
+
+      function showParagraph() {
+        document.getElementById("para-show").style.display = "block";
+      }
+
+      let isVisible = true;
+
+      function toggleParagraph() {
+        const para = document.getElementById("toggle");
+
+        if (isVisible) {
+          para.style.display = "none";
+          isVisible = false;
+        } else {
+          para.style.display = "block";
+          isVisible = true;
+        }
+      }
+
+      function checkUser() {
+        const use = document.getElementById("user").value;
+
+        if (use === "admin") {
+          document.getElementById("res").textContent = "Login Success";
+        } else {
+          document.getElementById("res").textContent = "Invalid User";
+        }
+      }
+
+      function checkPassword() {
+        const password = document.getElementById("password").value;
+
+        if (password.length >= 8) {
+          document.getElementById("result1").textContent = "Strong Password";
+        } else {
+          document.getElementById("result1").textContent = "Weak Password";
+        }
+      }
+
+      function showFullName() {
+        const firstName = document.getElementById("firstName").value;
+        const lastName = document.getElementById("lastName").value;
+
+        document.getElementById("result2").textContent =
+          firstName + " " + lastName;
+      }
+    </script>
+  </body>
+</html>
