@@ -58,17 +58,17 @@
         document.getElementById("result").textContent = userName;
       };
 
-      function hideParagraph() {
+      const hideParagraph = () => {
         document.getElementById("para").style.display = "none";
-      }
+      };
 
-      function showParagraph() {
+      const showParagraph = () => {
         document.getElementById("para-show").style.display = "block";
-      }
+      };
 
       let isVisible = true;
 
-      function toggleParagraph() {
+      const toggleParagraph = () => {
         const para = document.getElementById("toggle");
 
         if (isVisible) {
@@ -78,9 +78,9 @@
           para.style.display = "block";
           isVisible = true;
         }
-      }
+      };
 
-      function checkUser() {
+      const checkUser = () => {
         const use = document.getElementById("user").value;
 
         if (use === "admin") {
@@ -88,9 +88,9 @@
         } else {
           document.getElementById("res").textContent = "Invalid User";
         }
-      }
+      };
 
-      function checkPassword() {
+      const checkPassword = () => {
         const password = document.getElementById("password").value;
 
         if (password.length >= 8) {
@@ -98,15 +98,15 @@
         } else {
           document.getElementById("result1").textContent = "Weak Password";
         }
-      }
+      };
 
-      function showFullName() {
+      const showFullName = () => {
         const firstName = document.getElementById("firstName").value;
         const lastName = document.getElementById("lastName").value;
 
         document.getElementById("result2").textContent =
           firstName + " " + lastName;
-      }
+      };
     </script>
   </body>
 </html>
