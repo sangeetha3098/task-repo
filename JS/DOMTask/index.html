@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM task</title>
+  </head>
+  <body>
+    <div>
+      <h2>Task 1 - Character Counter</h2>
+
+      <div>
+        <textarea
+          id="textArea"
+          rows="6"
+          cols="40"
+          onkeyup="countCharacters()"
+          placeholder="Type here..."
+        ></textarea>
+        <p id="count">Total Characters : 0</p>
+      </div>
+    </div>
+    <div>
+      <h2>Task 2 - Age Category Checker</h2>
+      <input type="number" id="age" placeholder="Enter age" />
+      <button onclick="checkAge()">Check</button>
+      <p id="ageResult"></p>
+    </div>
+    <div>
+      <h2>Task 3 - Dark Mode / Light Mode</h2>
+      <button id="mode" onclick="lightMode()">Light Mode</button>
+    </div>
+
+    <div>
+      <h2>Task 4 - Movie Ticket Calculator</h2>
+      <input type="number" id="ticket" placeholder="Enter how many tickets" />
+      <button onclick="ticketPrice()">Calculate price</button>
+      <p id="price"></p>
+    </div>
+
+    <div>
+      <h2>Task 5 - Profile Card Generator</h2>
+
+      <input type="text" id="name" placeholder="Enter Name" /><br /><br />
+
+      <input type="text" id="role" placeholder="Enter Role" /><br /><br />
+
+      <input type="text" id="company" placeholder="Enter Company" /><br /><br />
+
+      <button onclick="generateCard()">Generate Profile</button>
+
+      <div id="card"></div>
+    </div>
+
+    <div>
+      <h2>Task 6 - Search Hero</h2>
+
+      <input type="text" id="hero" placeholder="Enter Hero Name" />
+
+      <button onclick="searchHero()">Search</button>
+
+      <p id="result"></p>
+    </div>
+    <div>
+      <h2>Task 7 - Lucky Number Checker</h2>
+
+      <input type="number" id="number" placeholder="Enter a number" />
+
+      <button onclick="checkLucky()">Check</button>
+
+      <p id="result"></p>
+    </div>
+
+    <div>
+      <h2>Task 8 - Product Price Calculator</h2>
+      <input type="text" id="product" placeholder="Enter Product name" />
+      <input type="number" id="qty" placeholder="Enter Quantity" />
+      <input type="number" id="prodprice" placeholder="Enter Price" />
+      <button onclick="productPrice()">Check</button>
+      <p id="priceproduct"></p>
+    </div>
+
+    <div>
+      <h2>Task 9 - Random Quote Generator</h2>
+
+      <button onclick="showQuote()">Show Quote</button>
+
+      <p id="quote"></p>
+    </div>
+
+    <div>
+      <h2>Task 10 - Student ID Generator</h2>
+
+      <input type="text" id="namestd" placeholder="Enter Name" /><br /><br />
+
+      <input type="text" id="course" placeholder="Enter Course" /><br /><br />
+
+      <button onclick="generateStudent()">Generate</button>
+
+      <div id="cards"></div>
+    </div>
+
+    <div>
+      <h2>Mini ATM</h2>
+
+      <input type="number" id="amount" placeholder="Enter Amount" /><br /><br />
+
+      <button onclick="deposit()">Deposit</button>
+      <button onclick="withdraw()">Withdraw</button>
+      <button onclick="checkBalance()">Check Balance</button>
+
+      <h3 id="atmresult"></h3>
+    </div>
+    <script>
+      const textArea = document.getElementById("textArea");
+      const count = document.getElementById("count");
+
+      const countCharacters = () => {
+        let text = document.getElementById("textArea").value;
+        document.querySelector("#count").innerText =
+          "Total Characters : " + text.length;
+      };
+
+      const checkAge = () => {
+        const checkage = document.getElementById("age").value;
+
+        if (checkage >= 0 && checkage <= 12) {
+          document.getElementById("ageResult").innerText = "Child";
+        } else if (checkage >= 13 && checkage <= 19) {
+          document.getElementById("ageResult").innerText = "Teenager";
+        } else if (checkage >= 20 && checkage <= 59) {
+          document.getElementById("ageResult").innerText = "Adult";
+        } else if (checkage >= 60) {
+          document.getElementById("ageResult").innerText = "Senior Citizen";
+        }
+      };
+
+      let dark = false;
+      const lightMode = () => {
+        if (dark == false) {
+          document.body.style.backgroundColor = "black";
+          document.body.style.color = "white";
+          document.getElementById("mode").innerText = "Dark Mode";
+          dark = true;
+        } else {
+          document.body.style.backgroundColor = "white";
+          document.body.style.color = "black";
+          document.getElementById("mode").innerText = "Light Mode";
+          dark = false;
+        }
+      };
+
+      const ticketPrice = () => {
+        let ticket = 150;
+
+        const count = document.getElementById("ticket").value;
+        document.querySelector("#price").innerText =
+          " Total Amount:" + count * ticket;
+      };
+
+      const generateCard = () => {
+        let name = document.getElementById("name").value;
+        let role = document.getElementById("role").value;
+        let company = document.getElementById("company").value;
+
+        document.getElementById("card").innerHTML = `
+        <div style="border:1px solid black; width:250px; padding:15px; margin-top:20px;">
+          <h3>${name}</h3>
+          <p><strong>Role:</strong> ${role}</p>
+          <p><strong>Company:</strong> ${company}</p>
+        </div>
+      `;
+      };
+
+      const heroes = ["Vijay", "Ajith", "Suriya", "SK", "Dhanush"];
+
+      const searchHero = () => {
+        let heroName = document.getElementById("hero").value;
+
+        if (heroes.includes(heroName)) {
+          document.getElementById("result").innerText = "Found";
+        } else {
+          document.getElementById("result").innerText = "Not Found";
+        }
+      };
+
+      const checkLucky = () => {
+        let number = document.getElementById("number").value;
+
+        if (number == 7 || number == 14 || number == 21 || number == 28) {
+          document.getElementById("result").innerText = "Lucky Number";
+        } else {
+          document.getElementById("result").innerText = "Normal Number";
+        }
+      };
+
+      const productPrice = () => {
+        const productName = document.getElementById("product").value;
+        const qty = document.getElementById("qty").value;
+        const productPrice = document.getElementById("prodprice").value;
+
+        let total = qty * productPrice;
+        document.querySelector("#priceproduct").innerHTML = `<div>
+            <p>Product:${productName}</p>
+             <p>Quantity:${qty}</p>
+              <p>Total:${total} </p>
+            </div>`;
+      };
+
+      const quotes = [
+        "Believe in yourself.",
+        "Never give up.",
+        "Practice makes perfect.",
+        "Dream big and work hard.",
+        "Success comes with consistency.",
+      ];
+
+      let index = 0;
+      const showQuote = () => {
+        document.getElementById("quote").innerText = quotes[index];
+
+        index++;
+
+        if (index == quotes.length) {
+          index = 0;
+        }
+      };
+
+      let id = 1001;
+
+      const generateStudent = () => {
+        let names = document.getElementById("namestd").value;
+        let course = document.getElementById("course").value;
+
+        document.getElementById("cards").innerHTML = `
+        <div style="border:1px solid black; width:250px; padding:10px; margin-top:20px;">
+          <h3>Student Details</h3>
+          <p>ID : STU${id}</p>
+          <p>Name : ${names}</p>
+          <p>Course : ${course}</p>
+        </div>
+      `;
+
+        id++;
+      };
+
+      let balance = 0;
+
+      const deposit = () => {
+        let amount = Number(document.getElementById("amount").value);
+
+        balance = balance + amount;
+
+        document.getElementById("atmresult").innerText = "Balance : ₹" + balance;
+      };
+
+      const withdraw = () => {
+        let amount = Number(document.getElementById("amount").value);
+
+        if (amount <= balance) {
+          balance = balance - amount;
+          document.getElementById("atmresult").innerText = "Balance : ₹" + balance;
+        } else {
+          document.getElementById("atmresult").innerText = "Insufficient Balance";
+        }
+      };
+
+      const checkBalance = () => {
+        document.getElementById("atmresult").innerText = "Balance : ₹" + balance;
+      };
+    </script>
+  </body>
+</html>
