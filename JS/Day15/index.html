@@ -1,61 +1,210 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScript Concepts</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Concepts</title>
 
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-100 flex justify-center items-center min-h-screen">
+    <div class="bg-white w-full max-w-3xl p-8 rounded-xl shadow-lg">
+      <h1 class="text-3xl font-bold text-center text-blue-600 mb-8">
+        JavaScript Concepts
+      </h1>
 
-  <div class="bg-white w-full max-w-3xl p-8 rounded-xl shadow-lg">
+      <!-- Callback -->
+      <div class="bg-blue-50 p-4 rounded mb-5">
+        <h2 class="text-xl font-semibold text-blue-600">Why Callback?</h2>
+        <p class="text-gray-700 mt-2">
+          Execute a function after another function completes.
+        </p>
 
-    <h1 class="text-3xl font-bold text-center text-blue-600 mb-8">
-     Important Interview Questions
-    </h1>
+        <div class="text-center mt-2">
+          <button
+            onclick="startOrder()"
+            class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700"
+          >
+            Order Food
+          </button>
+        </div>
 
-    <!-- Callback -->
-    <div class="border-l-4 border-blue-500 bg-blue-50 p-4 rounded mb-5">
-      <h2 class="text-xl font-semibold text-blue-600">
-        Why Callback?
-      </h2>
-      <p class="text-gray-700 mt-2">
-        Execute a function after another function completes.
-      </p>
+        <div
+          id="output"
+          class="mt-6 bg-gray-100 p-4 rounded text-lg font-medium space-y-2"
+        ></div>
+      </div>
+
+      <!-- Promise -->
+      <div class="bg-green-50 p-4 rounded mb-5">
+        <h2 class="text-xl font-semibold text-green-600">Why Promise?</h2>
+        <p class="text-gray-700 mt-2">
+          Solve Callback Hell by handling asynchronous operations in a cleaner
+          way.
+        </p>
+        <div class="text-center mt-2">
+          <button
+            onclick="startDownload()"
+            class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700"
+          >
+            Download File
+          </button>
+        </div>
+
+        <div
+          id="result"
+          class="mt-6 bg-gray-100 p-4 rounded space-y-2 text-lg font-medium"
+        ></div>
+      </div>
+
+      <!-- Async/Await -->
+      <div class="bg-purple-50 p-4 rounded mb-5">
+        <h2 class="text-xl font-semibold text-purple-600">Why Async/Await?</h2>
+        <p class="text-gray-700 mt-2">
+          Make Promise-based code cleaner, easier to read, and easier to
+          maintain.
+        </p>
+
+        <div class="text-center mt-2">
+          <button
+            onclick="checkResult()"
+            class="bg-purple-600 text-white px-6 py-2 rounded hover:bg-purple-700"
+          >
+            Check Result
+          </button>
+        </div>
+
+        <div
+          id="resultBox"
+          class="mt-6 bg-gray-100 p-4 rounded text-lg font-medium space-y-2"
+        ></div>
+      </div>
+
+      <!-- Fetch -->
+      <div class="bg-orange-50 p-4 rounded">
+        <h2 class="text-xl font-semibold text-orange-600">Why Fetch?</h2>
+        <p class="text-gray-700 mt-2">
+          Communicate with APIs to retrieve or send data over the internet.
+        </p>
+      </div>
+      <div class="text-center mt-2">
+        <button
+          onclick="getUser()"
+          class="bg-orange-600 text-white px-6 py-2 rounded hover:bg-orange-700"
+        >
+          Get User
+        </button>
+      </div>
+
+      <div id="userCard" class="mt-6 bg-gray-100 p-4 rounded hidden">
+        <h2 class="text-xl font-bold mb-2" id="userName"></h2>
+        <p id="userEmail"></p>
+        <p id="userCity"></p>
+      </div>
     </div>
 
-    <!-- Promise -->
-    <div class="border-l-4 border-green-500 bg-green-50 p-4 rounded mb-5">
-      <h2 class="text-xl font-semibold text-green-600">
-        Why Promise?
-      </h2>
-      <p class="text-gray-700 mt-2">
-        Solve Callback Hell by handling asynchronous operations in a cleaner way.
-      </p>
-    </div>
+    <script>
+      const output = document.getElementById("output");
 
-    <!-- Async/Await -->
-    <div class="border-l-4 border-purple-500 bg-purple-50 p-4 rounded mb-5">
-      <h2 class="text-xl font-semibold text-purple-600">
-        Why Async/Await?
-      </h2>
-      <p class="text-gray-700 mt-2">
-        Make Promise-based code cleaner, easier to read, and easier to maintain.
-      </p>
-    </div>
+      function addMessage(message) {
+        output.innerHTML += `<p>${message}</p>`;
+      }
 
-    <!-- Fetch -->
-    <div class="border-l-4 border-orange-500 bg-orange-50 p-4 rounded">
-      <h2 class="text-xl font-semibold text-orange-600">
-        Why Fetch?
-      </h2>
-      <p class="text-gray-700 mt-2">
-        Communicate with APIs to retrieve or send data over the internet.
-      </p>
-    </div>
+      const orderFood = (callback) => {
+        addMessage("Order Received");
 
-  </div>
+        setTimeout(() => {
+          addMessage("Food Prepared");
+          callback();
+        }, 3000);
+      };
 
-</body>
+      const delivery = () => {
+        addMessage("Food Delivered");
+      };
+
+      const startOrder = () => {
+        output.innerHTML = "";
+        orderFood(delivery);
+      };
+
+      const outputs = document.getElementById("result");
+
+      const showMessage = (message) => {
+        outputs.innerHTML += `<p>${message}</p>`;
+      };
+
+      const downloadFile = () => {
+        return new Promise((resolve, reject) => {
+          showMessage("Download Started...");
+
+          setTimeout(() => {
+            const success = true;
+
+            if (success) {
+              resolve("File Downloaded Successfully");
+            } else {
+              reject("Download Failed");
+            }
+          }, 3000);
+        });
+      };
+
+      const startDownload = () => {
+        outputs.innerHTML = "";
+
+        downloadFile()
+          .then((result) => {
+            showMessage(result);
+          })
+          .catch((error) => {
+            showMessage(error);
+          });
+      };
+
+      const resultBox = document.getElementById("resultBox");
+
+      const showResult = (message) => {
+        resultBox.innerHTML += `<p>${message}</p>`;
+      };
+
+      const getResult = () => {
+        return new Promise((resolve) => {
+          showResult("Checking Result...");
+
+          setTimeout(() => {
+            resolve("Congratulations! You Passed.");
+          }, 3000);
+        });
+      };
+
+      const checkResult = async () => {
+        resultBox.innerHTML = "";
+
+        const result = await getResult();
+
+        showResult(result);
+      };
+
+      const getUser = () => {
+        fetch("https://jsonplaceholder.typicode.com/users/1")
+          .then((response) => response.json())
+          .then((data) => {
+            document.getElementById("userCard").classList.remove("hidden");
+
+            document.getElementById("userName").innerText =
+              "Name: " + data.name;
+
+            document.getElementById("userEmail").innerText =
+              "Email: " + data.email;
+
+            document.getElementById("userCity").innerText =
+              "City: " + data.address.city;
+          })
+          .catch(() => {
+            alert("Failed to fetch data.");
+          });
+      };
+    </script>
+  </body>
 </html>
