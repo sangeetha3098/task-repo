@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch API</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="p-4">
+      <h1 class="text-4xl p-4">Users Details</h1>
+      <table class="border border-gray-300 border-collapse w-full">
+        <thead class="bg-blue-600 text-white">
+          <tr>
+            <th class="border border-gray-300 p-3">SI No</th>
+            <th class="border border-gray-300 p-3">Name</th>
+            <th class="border border-gray-300 p-3">Age</th>
+            <th class="border border-gray-300 p-3">Company</th>
+            <th class="border border-gray-300 p-3">Email</th>
+            <th class="border border-gray-300 p-3">University</th>
+          </tr>
+        </thead>
+
+        <tbody id="userDetails"></tbody>
+      </table>
+    </div>
+    <script>
+      const userData = async () => {
+        const user = await fetch("https://dummyjson.com/users");
+        const response = await user.json();
+        console.log(response);
+        const datas = response.users;
+
+        let userShow = document.getElementById("userDetails");
+
+        datas.forEach((e, i) => {
+          userShow.innerHTML += `
+              <tr class="hover:bg-blue-50">
+                <td class="border border-gray-300 p-3">${e.id}</td>
+                <td class="border border-gray-300 p-3">${e.firstName} ${e.lastName}</td>
+                <td class="border border-gray-300 p-3">${e.age}</td>
+                <td class="border border-gray-300 p-3">${e.company.name}</td>
+                <td class="border border-gray-300 p-3 text-blue-600">${e.email}</td>
+                <td class="border border-gray-300 p-3">${e.university}</td>
+            </tr>
+                `;
+        });
+      };
+
+      userData();
+    </script>
+  </body>
+</html>
