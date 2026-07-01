@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="bg-white p-6 rounded-lg shadow-lg w-80">
+      <h2 class="text-2xl font-bold text-center mb-4">Palindrome Checker</h2>
+
+      <label class="font-semibold">Enter a Number</label>
+      <input
+        type="number"
+        id="number"
+        class="w-full border p-2 rounded mt-2 mb-4"
+        placeholder="Enter a number"
+      />
+
+      <button
+        onclick="checkPalindrome()"
+        class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
+      >
+        Check
+      </button>
+
+      <h3 id="result" class="text-center font-bold mt-4"></h3>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-bold text-center mb-4">Logic check</h2>
+      <button onclick="showInventory()">Show Result</button>
+
+      <h3 id="total"></h3>
+      <h3 id="available"></h3>
+      <h3 id="outOfStock"></h3>
+    </div>
+
+    <div>
+      <h2 class="text-2xl font-bold text-center mb-4">Logic check</h2>
+
+      <button onclick="showDetails()">Show Result</button>
+      <h3 id="total"></h3>
+      <h3 id="passed"></h3>
+      <h3 id="failed"></h3>
+      <h3 id="average"></h3>
+      <h3 id="topper"></h3>
+    </div>
+
+    <script>
+      const checkPalindrome = () => {
+        let number = document.getElementById("number").value;
+
+        let reverse = number.split("").reverse().join("");
+
+        if (number === reverse) {
+          document.getElementById("result").innerText =
+            number + " is a Palindrome";
+        } else {
+          document.getElementById("result").innerText =
+            number + " is Not a Palindrome";
+        }
+      };
+
+      const products = [
+        { id: 1, name: "Laptop", stock: 5 },
+        { id: 2, name: "Mobile", stock: 0 },
+        { id: 3, name: "Watch", stock: 8 },
+        { id: 4, name: "Keyboard", stock: 0 },
+      ];
+
+      const showInventory = () => {
+        let total = products.length;
+        let available = 0;
+        let outOfStock = 0;
+
+        products.forEach((product) => {
+          if (product.stock > 0) {
+            available++;
+          } else {
+            outOfStock++;
+          }
+        });
+
+        document.getElementById("total").innerText =
+          "Total Products : " + total;
+        document.getElementById("available").innerText =
+          "Available : " + available;
+        document.getElementById("outOfStock").innerText =
+          "Out Of Stock : " + outOfStock;
+      };
+
+      const students = [
+        { id: 1, name: "Ravi", mark: 80 },
+        { id: 2, name: "Priya", mark: 95 },
+        { id: 3, name: "Arun", mark: 60 },
+        { id: 4, name: "Kumar", mark: 30 },
+      ];
+      const showDetails = () => {
+        let totalStudents = students.length;
+        let passedStudents = 0;
+        let failedStudents = 0;
+        let totalMarks = 0;
+        let topper = students[0];
+
+        students.forEach((student) => {
+          totalMarks += student.mark;
+          if (student.mark >= 35) {
+            passedStudents++;
+          } else {
+            failedStudents++;
+          }
+          if (student.mark > topper.mark) {
+            topper = student;
+          }
+        });
+        let averageMark = totalMarks / totalStudents;
+
+        document.getElementById("total").innerText =
+          "Total Students : " + totalStudents;
+        document.getElementById("passed").innerText =
+          "Passed Students : " + passedStudents;
+        document.getElementById("failed").innerText =
+          "Failed Students : " + failedStudents;
+        document.getElementById("average").innerText =
+          "Average Mark : " + averageMark;
+        document.getElementById("topper").innerText = "Topper : " + topper.name;
+      };
+    </script>
+  </body>
+</html>
