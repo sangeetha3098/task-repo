@@ -21,3 +21,21 @@ VALUES
 (110,'Anitha','Manager',90000,'Chennai');
 
 select * from Employee;
+select name , department , salary from Employee;
+select * from Employee;
+select distinct city from Employee;
+select * from Employee;
+select * from Employee WHERE city= "Chennai";
+select * from Employee WHERE salary > 60000;
+select * from Employee WHERE salary <= 45000;
+select * from Employee WHERE department = "Developer" AND city = "Chennai";
+SELECT * FROM Employee WHERE City = 'Madurai' OR City = 'Salem';
+select * from Employee WHERE name LIKE "a%";
+select * from Employee WHERE name LIKE "%a";
+select * from Employee WHERE name LIKE "%a%";
+select * from Employee WHERE city IN ('Chennai', 'Salem');
+select * from Employee WHERE salary BETWEEN 45000 AND 70000;
+select * from Employee ORDER BY salary DESC;
+select * from Employee ORDER BY name ASC;
+select * from Employee LIMIT 5;
+select * from Employee ORDER BY salary DESC LIMIT 3;
