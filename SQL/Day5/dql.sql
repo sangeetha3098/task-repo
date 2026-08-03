@@ -22,11 +22,11 @@ VALUES
 (110,'Anitha','Manager',90000,'Chennai');
 
 SELECT Department FROM EmployeeDetails GROUP BY Department;
-SELECT Department, COUNT(*) AS Total_Employees FROM EmployeeDetails GROUP BY Department;
-SELECT Department, SUM(Salary) AS Total_Salary FROM EmployeeDetails GROUP BY Department;
-SELECT Department, AVG(Salary) AS Average_Salary FROM EmployeeDetails GROUP BY Department;
-SELECT Department, MAX(Salary) AS Highest_Salary FROM EmployeeDetails GROUP BY Department;
-SELECT Department, MIN(Salary) AS Lowest_Salary FROM EmployeeDetails GROUP BY Department;
+SELECT Department, COUNT(*) AS Total_Employees FROM EmployeeDetails GROUP BY department;
+SELECT Department, SUM(Salary) AS Total_Salary FROM EmployeeDetails GROUP BY department;
+SELECT Department, AVG(Salary) AS Average_Salary FROM EmployeeDetails GROUP BY department;
+SELECT Department, MAX(Salary) AS Highest_Salary FROM EmployeeDetails GROUP BY department;
+SELECT Department, MIN(Salary) AS Lowest_Salary FROM EmployeeDetails GROUP BY department;
 
 SELECT City, COUNT(*) AS Total_Employees FROM EmployeeDetails GROUP BY City;
 SELECT City, MAX(Salary) AS Highest_Salary FROM EmployeeDetails GROUP BY City;
@@ -37,9 +37,9 @@ SELECT Department, COUNT(*) AS Employee_Count, SUM(Salary) AS Total_Salary FROM 
 SELECT Department, City, COUNT(*) AS Employee_Count, AVG(Salary) AS Average_Salary FROM EmployeeDetails GROUP BY Department, City;
 
 SELECT Department FROM EmployeeDetails GROUP BY Department;
-SELECT Department, COUNT(*) AS Total_Employees FROM EmployeeDetails GROUP BY Department;
-SELECT Department, SUM(Salary) AS Total_Salary FROM EmployeeDetails GROUP BY Department;
-SELECT Department, AVG(Salary) AS Average_Salary FROM EmployeeDetails GROUP BY Department;
-SELECT Department, MAX(Salary) AS Highest_Salary FROM EmployeeDetails GROUP BY Department;
-SELECT Department, MIN(Salary) AS Lowest_Salary FROM EmployeeDetails GROUP BY Department;
-SELECT Department, SUM(Salary) AS Total_Salary FROM EmployeeDetails GROUP BY Department ORDER BY Total_Salary DESC LIMIT 3;
+SELECT Department, COUNT(*) AS Total_Employees FROM EmployeeDetails GROUP BY department;
+SELECT Department, SUM(Salary) AS Total_Salary FROM EmployeeDetails GROUP BY department;
+SELECT Department, AVG(Salary) AS Average_Salary FROM EmployeeDetails GROUP BY department;
+SELECT Department, MAX(Salary) AS Highest_Salary FROM EmployeeDetails GROUP BY department;
+SELECT Department, MIN(Salary) AS Lowest_Salary FROM EmployeeDetails GROUP BY department;
+SELECT Department, SUM(Salary) AS Total_Salary FROM EmployeeDetails GROUP BY department ORDER BY Total_Salary DESC LIMIT 3;
